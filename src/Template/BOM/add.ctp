@@ -184,9 +184,9 @@
 	                                <div class="col-sm-6 col-xs-6">
 	                                    <select name="category" class="form-control" id="part-model-category">
 	                                        <option>Please Select</option>
-	                                        <option>Direct Item</option>
-	                                        <option>Customize</option>
-	                                        <option>None count Item</option>
+	                                        <option value="Direct Item">Direct Item</option>
+	                                        <option value="Customize">Customize</option>
+	                                        <option value="None count Item">None count Item</option>
 	                                    </select>
 	                                </div>
 	                            </div>
@@ -196,119 +196,8 @@
                     </div>
 
                     <div class="row secoundbar">
-	            		<div class="col-sm-12">
-			    			<div class="clearfix suplier-3">
-			    				<div class="col-sm-6">
-					    			<div class="form-group">
-			                            <div class="col-sm-6 col-md-4">
-			                                <label for="part-quality-process1" class="label-drawing">Process 1<span class="project-name-sem">:</span></label>
-			                            </div>
-			                            <div class="col-sm-6 ">
-			                                <input name="process1" type="text" id="part-quality-process1" class="form-control"/>
-			                            </div>
-			                        </div>
-					    		</div>
-		    		
-					    		<div class="col-sm-6">
-					    			<div class="form-group">
-			                            <div class="col-sm-6 col-md-4">
-			                                <label for="supplier1" class="label-drawing">Supplier 1<span class="project-name-sem">:</span></label>
-			                            </div>
-			                            <div class="col-sm-6 ">
-			                                <input name="supplier1" type="text" id="supplier1" class="form-control"/>
-			                            </div>
-			                        </div>
-					    		</div>
-			    			</div>
-				    		<div class="clearfix suplier-3">
-				    			<div class="col-sm-6">
-					    			<div class="form-group">
-			                            <div class="col-sm-6 col-md-4">
-			                                <label for="part-quality-process2" class="label-drawing">Process 2<span class="project-name-sem">:</span></label>
-			                            </div>
-			                            <div class="col-sm-6 ">
-			                                <input name="process2" type="text" id="part-quality-process2" class="form-control"/>
-			                            </div>
-			                        </div>
-					    		</div>
-					    		<div class="col-sm-6">
-					    			<div class="form-group">
-			                            <div class="col-sm-6 col-md-4">
-			                                <label for="supplier2" class="label-drawing">Supplier 2<span class="project-name-sem">:</span></label>
-			                            </div>
-			                            <div class="col-sm-6 ">
-			                                <input name="supplier2" type="text" id="supplier2" class="form-control"/>
-			                            </div>
-			                        </div>
-					    		</div>
-				    		</div>
-				    		<div class="clearfix suplier-3">
-				    			<div class="col-sm-6">
-					    			<div class="form-group">
-			                            <div class="col-sm-6 col-md-4">
-			                                <label for="part-quality-process3" class="label-drawing">Process 3<span class="project-name-sem">:</span></label>
-			                            </div>
-			                            <div class="col-sm-6 ">
-			                                <input name="process3" type="text" id="part-quality-process3" class="form-control"/>
-			                            </div>
-			                        </div>
-					    		</div>
-								<div class="col-sm-6">
-									<div class="form-group">
-				                        <div class="col-sm-6 col-md-4">
-				                            <label for="supplier3" class="label-drawing">Supplier 3<span class="project-name-sem">:</span></label>
-				                        </div>
-				                        <div class="col-sm-6 ">
-				                            <input name="supplier3" type="text" id="supplier3" class="form-control"/>
-				                        </div>
-				                    </div>
-								</div>
-				    		</div>
-				    		<div class="clearfix suplier-3">
-				    			<div class="col-sm-6">
-					    			<div class="form-group">
-			                            <div class="col-sm-6 col-md-4">
-			                                <label for="part-quality-process4" class="label-drawing">Process 4<span class="project-name-sem">:</span></label>
-			                            </div>
-			                            <div class="col-sm-6">
-			                                <input name="process4" type="text" id="part-quality-process4" class="form-control"/>
-			                            </div>
-			                        </div>
-					    		</div>
-					    		<div class="col-sm-6">
-					    			<div class="form-group">
-			                            <div class="col-sm-6 col-md-4">
-			                                <label for="supplier4" class="label-drawing">Supplier 4<span class="project-name-sem">:</span></label>
-			                            </div>
-			                            <div class="col-sm-6 ">
-			                                <input name="supplier4" type="text" id="supplier4" class="form-control"/>
-			                            </div>
-			                        </div>
-					    		</div>
-				    		</div>
-                            <div class="clearfix suplier-3">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <div class="col-sm-6 col-md-4">
-                                        <label for="part-quality-process5" class="label-drawing">Process 5<span class="project-name-sem">:</span></label>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input name="process5" type="text" id="part-quality-process5" class="form-control"/>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <div class="col-sm-6 col-md-4">
-                                        <label for="part-quality-process6" class="label-drawing">Process 6<span class="project-name-sem">:</span></label>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input name="process6" type="text" id="part-quality-process6" class="form-control"/>
-                                    </div>
-                                </div>
-                            </div>
-		           		 </div>
+	            		<div class="col-sm-12" id="process">
+		           		</div>
                     </div>
 
                     <div id="child-parts" class="material-bill-button pull-right">
@@ -340,6 +229,186 @@ foreach($material as $val){
 ?>
 <script>
     $(document).ready(function(){
+        $('#part-model-category').on('change',function (e) {
+           e.preventDefault();
+           var cat = $(this).val();
+           if(cat == 'Customize'){
+                $('#process').html(
+                    '<div class="col-sm-6">' +
+                    '<div class="form-group">' +
+                    '<div class="col-sm-6 col-md-4">' +
+                    '<label for="part-quality-process1" class="label-drawing">Process 1<span class="project-name-sem">:</span></label>' +
+                    '</div>' +
+                    '<div class="col-sm-6 ">' +
+                    '<input name="process1" type="text" id="part-quality-process1" class="form-control"/>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>' +
+                    '<div class="col-sm-6">' +
+                    '<div class="form-group">' +
+                    '<div class="col-sm-6 col-md-4">' +
+                    '<label for="part-quality-process2" class="label-drawing">Process 2<span class="project-name-sem">:</span></label>' +
+                    '</div>' +
+                    '<div class="col-sm-6 ">' +
+                    '<input name="process2" type="text" id="part-quality-process2" class="form-control"/>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>' +
+                    '<div class="col-sm-6">' +
+                    '<div class="form-group">' +
+                    '<div class="col-sm-6 col-md-4">' +
+                    '<label for="part-quality-process3" class="label-drawing">Process 3<span class="project-name-sem">:</span></label>' +
+                    '</div>' +
+                    '<div class="col-sm-6 ">' +
+                    '<input name="process3" type="text" id="part-quality-process3" class="form-control"/>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>' +
+                    '<div class="col-sm-6">' +
+                    '<div class="form-group">' +
+                    '<div class="col-sm-6 col-md-4">' +
+                    '<label for="part-quality-process4" class="label-drawing">Process 4<span class="project-name-sem">:</span></label>' +
+                    '</div>\n' +
+                    '<div class="col-sm-6">' +
+                    '<input name="process4" type="text" id="part-quality-process4" class="form-control"/>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>' +
+                    '<div class="col-sm-6">' +
+                    '<div class="form-group">' +
+                    '<div class="col-sm-6 col-md-4">' +
+                    '<label for="part-quality-process5" class="label-drawing">Process 5<span class="project-name-sem">:</span></label>' +
+                    '</div>' +
+                    '<div class="col-sm-6">' +
+                    '<input name="process5" type="text" id="part-quality-process5" class="form-control"/>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>' +
+                    '<div class="col-sm-6">' +
+                    '<div class="form-group">' +
+                    '<div class="col-sm-6 col-md-4">' +
+                    '<label for="part-quality-process6" class="label-drawing">Process 6<span class="project-name-sem">:</span></label>' +
+                    '</div>' +
+                    '<div class="col-sm-6">' +
+                    '<input name="process6" type="text" id="part-quality-process6" class="form-control"/>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>');
+           }else{
+               $('#process').html('<div class="clearfix suplier-3">' +
+                   '<div class="col-sm-6">' +
+                   '<div class="form-group">' +
+                   '<div class="col-sm-6 col-md-4">' +
+                   '<label for="part-quality-process1" class="label-drawing">Process 1<span class="project-name-sem">:</span></label>\n' +
+                   '</div>' +
+                   '<div class="col-sm-6 ">' +
+                   '<input name="process1" type="text" id="part-quality-process1" class="form-control"/>\n' +
+                   '</div>' +
+                   '</div>' +
+                   '</div>' +
+                   '' +
+                   '<div class="col-sm-6">' +
+                   '<div class="form-group">' +
+                   '<div class="col-sm-6 col-md-4">' +
+                   '<label for="supplier1" class="label-drawing">Supplier 1<span class="project-name-sem">:</span></label>' +
+                   '</div>' +
+                   '<div class="col-sm-6 ">' +
+                   '<input name="supplier1" type="text" id="supplier1" class="form-control"/>' +
+                   '</div>' +
+                   '</div>' +
+                   '</div>' +
+                   '</div>' +
+                   '<div class="clearfix suplier-3">' +
+                   '<div class="col-sm-6">' +
+                   '<div class="form-group">' +
+                   '<div class="col-sm-6 col-md-4">' +
+                   '<label for="part-quality-process2" class="label-drawing">Process 2<span class="project-name-sem">:</span></label>' +
+                   '</div>\n' +
+                   '<div class="col-sm-6 ">' +
+                   '<input name="process2" type="text" id="part-quality-process2" class="form-control"/>' +
+                   '</div>' +
+                   '</div>' +
+                   '</div>' +
+                   '<div class="col-sm-6">' +
+                   '<div class="form-group">' +
+                   '<div class="col-sm-6 col-md-4">' +
+                   '<label for="supplier2" class="label-drawing">Supplier 2<span class="project-name-sem">:</span></label>' +
+                   '</div>' +
+                   '<div class="col-sm-6 ">' +
+                   '<input name="supplier2" type="text" id="supplier2" class="form-control"/>' +
+                   '</div>' +
+                   '</div>' +
+                   '</div>' +
+                   '</div>' +
+                   '<div class="clearfix suplier-3">' +
+                   '<div class="col-sm-6">' +
+                   '<div class="form-group">' +
+                   '<div class="col-sm-6 col-md-4">' +
+                   '<label for="part-quality-process3" class="label-drawing">Process 3<span class="project-name-sem">:</span></label>' +
+                   '</div>' +
+                   '<div class="col-sm-6 ">' +
+                   '<input name="process3" type="text" id="part-quality-process3" class="form-control"/>' +
+                   '</div>' +
+                   '</div>' +
+                   '</div>' +
+                   '<div class="col-sm-6">' +
+                   '<div class="form-group">' +
+                   '<div class="col-sm-6 col-md-4">' +
+                   '<label for="supplier3" class="label-drawing">Supplier 3<span class="project-name-sem">:</span></label>' +
+                   '</div>' +
+                   '<div class="col-sm-6 ">' +
+                   '<input name="supplier3" type="text" id="supplier3" class="form-control"/>' +
+                   '</div>' +
+                   '</div>' +
+                   '</div>' +
+                   '</div>' +
+                   '<div class="clearfix suplier-3">' +
+                   '<div class="col-sm-6">' +
+                   '<div class="form-group">' +
+                   '<div class="col-sm-6 col-md-4">' +
+                   '<label for="part-quality-process4" class="label-drawing">Process 4<span class="project-name-sem">:</span></label>' +
+                   '</div>' +
+                   '<div class="col-sm-6">' +
+                   '<input name="process4" type="text" id="part-quality-process4" class="form-control"/>' +
+                   '</div>' +
+                   '</div>' +
+                   '</div>' +
+                   '<div class="col-sm-6">' +
+                   '<div class="form-group">' +
+                   '<div class="col-sm-6 col-md-4">' +
+                   '<label for="supplier4" class="label-drawing">Supplier 4<span class="project-name-sem">:</span></label>' +
+                   '</div>' +
+                   '<div class="col-sm-6 ">' +
+                   '<input name="supplier4" type="text" id="supplier4" class="form-control"/>' +
+                   '</div>' +
+                   '</div>' +
+                   '</div>' +
+                   '</div>' +
+                   '<div class="clearfix suplier-3">' +
+                   '<div class="col-sm-6">' +
+                   '<div class="form-group">' +
+                   '<div class="col-sm-6 col-md-4">' +
+                   '<label for="part-quality-process5" class="label-drawing">Process 5<span class="project-name-sem">:</span></label>' +
+                   '</div>' +
+                   '<div class="col-sm-6">' +
+                   '<input name="process5" type="text" id="part-quality-process5" class="form-control"/>' +
+                   '</div>' +
+                   '</div>' +
+                   '</div>' +
+                   '</div>' +
+                   '<div class="col-sm-6">' +
+                   '<div class="form-group">' +
+                   '<div class="col-sm-6 col-md-4">' +
+                   '<label for="part-quality-process6" class="label-drawing">Process 6<span class="project-name-sem">:</span></label>' +
+                   '</div>' +
+                   '<div class="col-sm-6">' +
+                   '<input name="process6" type="text" id="part-quality-process6" class="form-control"/>' +
+                   '</div>' +
+                   '</div>' +
+                   '</div>');
+           }
+        });
         $('#cn-version').html('<option value="ZZT">ZZT</option>'+
             '<option value="ZZTT">ZZTT</option>'+
             '<option value="ZZZ">ZZZ</option>'+

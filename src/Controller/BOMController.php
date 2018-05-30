@@ -151,7 +151,7 @@ class BOMController extends AppController
                     }
                 }
                 $this->Flash->success(__('The Bill Of Material has been saved.'));
-                
+
                 $urlToEng = 'http://salesmodule.acumenits.com/bom/eng-receive';
                 $sendToEng = $this->request->getData();
 
@@ -359,16 +359,16 @@ class BOMController extends AppController
         if($this->Auth->user('role') == 'eng-personnel'){
             $bom = $this->paginate($this->BOM->find('all')
                 ->where(['stat' => 'pending'])
-->orwhere(['stat' => 'rejected'])
+                ->orwhere(['stat' => 'rejected'])
                 ->orwhere(['stat' => 'acknowledged'])
-);
+            );
 
         }
         $this->set('boms', $bom);
     }
 
     public function editRequests($id = null){
-    	$this->loadModel('PartMasterList');
+        $this->loadModel('PartMasterList');
         $partMasterList = $this->paginate($this->PartMasterList);
         $part_no = $part_name = null;
         foreach($partMasterList as $pm){
@@ -384,7 +384,7 @@ class BOMController extends AppController
             $drawing_no .= '{label:"'.$pm->drawingName.'",idx:"'.$pm->drawingNo.'",rev:"'.$pm->revNo.'"},';
         }
         $drawing_no = rtrim($drawing_no, ',');
-    	$this->loadModel('Material');
+        $this->loadModel('Material');
         $this->loadModel('Finishing');
         $finishing = $this->Finishing->find('all');
         $this->set('finishing',$finishing);
