@@ -72,9 +72,7 @@
                         <td><a href=""><?= h($drawing->drawingNo) ?></a></td>
                         <td>
                             <ul>
-                                <!--<li><a href="#"><img class="img-icon" src="<?php echo $this->request->webroot.'assets/img/search.png'; ?>" alt=""></a></li>
-                                --><li><a href="<?php echo $this->Url->build(['controller' => 'Drawing', 'action' => 'editRequests', $drawing->id]); ?>"><i class="fa fa-pencil-square-o fa-2x"></i></a></li>
-                                <!--<li><a href="#"><img class="img-icon" src="<?php echo $this->request->webroot.'assets/img/file-1.png'; ?>" alt=""></a></li>-->
+                                <li><a href="<?php echo $this->Url->build(['controller' => 'Drawing', 'action' => 'editRequests', $drawing->id]); ?>"><span class="btn btn-primary">Edit</span></a></li>
                             </ul>
                         </td>
                     </tr>
@@ -86,10 +84,8 @@
                             <td><a href=""><?php echo $cd->drawingNo; ?></a></td>
                             <td>
                                 <ul>
-                                    <!--<li><a href="<?php echo $this->Url->build(['controller' => 'Drawing', 'action' => 'viewDrawing', $cd->id]); ?>"><img class="img-icon" src="<?php echo $this->request->webroot.'assets/img/search.png'; ?>" alt=""></a></li>
-                                    --><li><a href="<?php echo $this->Url->build(['controller' => 'Drawing', 'action' => 'editRequests', $drawing->id]); ?>"><i class="fa fa-pencil-square-o fa-2x"></i></a></li>
-                                    <!--<li><a href="#"><img class="img-icon" src="<?php echo $this->request->webroot.'assets/img/file-1.png'; ?>" alt=""></a></li>
-                                --></ul>
+                                    <li><a href="<?php echo $this->Url->build(['controller' => 'Drawing', 'action' => 'editRequests', $drawing->id]); ?>"><span class="btn btn-primary">Edit</span></a></li>
+                                </ul>
                             </td>
                         </tr>
                     <?php endforeach; ?>

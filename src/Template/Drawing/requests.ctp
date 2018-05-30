@@ -40,8 +40,8 @@
                                 <td><?= h($drawing->remarks) ?></td>
                                 <td>
                                     <ul>
-                                        <li><a href="<?php echo $this->Url->build(['controller' => 'Drawing', 'action' => 'editRequests', $drawing->id]); ?>"><img class="img-icon" src="<?php echo $this->request->webroot.'assets/img/search.png'; ?>" alt=""></a></li>
-                                        <li><a href="<?php echo $this->Url->build(['controller' => 'Drawing', 'action' => 'editRequests', $drawing->id]); ?>"><i class="fa fa-pencil-square-o fa-2x"></i></a></li>
+                                        <li><a href="<?php echo $this->Url->build(['controller' => 'Drawing', 'action' => 'view', $drawing->id]); ?>"><span class="btn btn-primary"> VIEW </span></a></li>
+                                        <li><a href="<?php echo $this->Url->build(['controller' => 'Drawing', 'action' => 'editRequests', $drawing->id]); ?>"><span class="btn btn-primary"> EDIT </span></i></a></li>
                                     </ul>
                                 </td>
                             </tr>

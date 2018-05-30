@@ -268,7 +268,7 @@ foreach($material as $val){
                     '<div class="form-group">' +
                     '<div class="col-sm-6 col-md-4">' +
                     '<label for="part-quality-process4" class="label-drawing">Process 4<span class="project-name-sem">:</span></label>' +
-                    '</div>\n' +
+                    '</div>' +
                     '<div class="col-sm-6">' +
                     '<input name="process4" type="text" id="part-quality-process4" class="form-control"/>' +
                     '</div>' +
@@ -555,7 +555,7 @@ foreach($material as $val){
             '<div class="col-sm-6">'+
             '<div class="form-group">'+
             '<div class="col-sm-6 col-md-4">'+
-            '<label for="part-quality-version" class="label-drawing">Quality <span class="project-name-sem">:</span></label>'+
+            '<label for="part-quality-version" class="label-drawing">Quantity <span class="project-name-sem">:</span></label>'+
             '</div>'+
             '<div class="col-sm-6 ">'+
             '<input name="quality'+total+'" type="text" id="part-quality-version" class="form-control"/>'+

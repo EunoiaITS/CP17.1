@@ -19,7 +19,7 @@
                             <th>Status</th>
                             <th>Remarks</th>
                             <th>DCN No</th>
-                            <th>Document</th>
+                            <th>Action</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -32,7 +32,7 @@
                                 <td><?= h($dr->stat) ?></td>
                                 <td></td>
                                 <td></td>
-                                <td><?= $this->Html->link(__('VIEW'), ['action' => 'view', $dr->id]) ?></td>
+                                <td><a href="<?php echo $this->Url->build(['controller'=>'Drawing','action' => 'view', $dr->id]) ?>"><span class="btn btn-primary"> VIEW </span></a></td>
                             </tr>
                         <?php endforeach; ?>
                         </tbody>

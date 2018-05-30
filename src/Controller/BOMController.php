@@ -79,8 +79,6 @@ class BOMController extends AppController
         $this->set('finishing',$finishing);
         $material = $this->Material->find('all');
         $this->set('material',$material);
-        //echo "<pre>";
-        //var_dump($material);
 
 
         $this->loadModel('PartMasterList');
@@ -96,7 +94,7 @@ class BOMController extends AppController
         $drawing = $this->paginate($this->Drawing);
         $drawing_no = null;
         foreach($drawing as $pm){
-            $drawing_no .= '{label:"'.$pm->drawingName.'",idx:"'.$pm->drawingNo.'",rev:"'.$pm->revNo.'"},';
+            $drawing_no .= '{label:"'.$pm->drawingNo.'",rev:"'.$pm->revNo.'"},';
         }
         $drawing_no = rtrim($drawing_no, ',');
         $bOM = $this->BOM->newEntity();
