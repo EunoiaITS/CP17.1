@@ -75,7 +75,6 @@ class BOMController extends AppController
      */
     public function add()
     {
-        //$this->autoRender = false;
         $this->loadModel('Material');
         $this->loadModel('Finishing');
         $finishing = $this->Finishing->find('all');
@@ -94,7 +93,7 @@ class BOMController extends AppController
         $part_no = rtrim($part_no, ',');
         $part_name = rtrim($part_name, ',');
         $this->loadModel('Drawing');
-        $drawing = $this->paginate($this->Drawing);
+        $drawing = $this->Drawing->find('all');
         $drawing_no = null;
         foreach($drawing as $pm){
             $drawing_no .= '{label:"'.$pm->drawingNo.'",rev:"'.$pm->revNo.'"},';
@@ -199,8 +198,6 @@ class BOMController extends AppController
         $this->set('part_no', $part_no);
         $this->set('part_name', $part_name);
         $this->set('drawing_no', $drawing_no);
-
-
     }
 
     /**

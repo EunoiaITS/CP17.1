@@ -3,32 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6052b7f3-382b-4df1-987e-7d522dd929cc" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AppController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/BOMController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BOMController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/PartMasterListController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PartMasterListController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/BOM/index.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/BOM/index.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/BOM/notification.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/BOM/notification.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/BOM/requests.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/BOM/requests.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/DocumentChangeNotice/acknowledge.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/DocumentChangeNotice/acknowledge.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/DocumentChangeNotice/index.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/DocumentChangeNotice/index.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/DocumentChangeNotice/notification.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/DocumentChangeNotice/notification.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/DocumentChangeNotice/requests.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/DocumentChangeNotice/requests.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/DocumentChangeNotice/view.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/DocumentChangeNotice/view.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/ECR/index.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/ECR/index.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/ECR/notification.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/ECR/notification.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/ECR/requests.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/ECR/requests.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/Element/menus.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Element/menus.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/IPI/for_approve.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/IPI/for_approve.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/IPI/for_check.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/IPI/for_check.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/IPI/for_confirm.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/IPI/for_confirm.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/IPI/index.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/IPI/index.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/IPI/requests.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/IPI/requests.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/PartApproval/index.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/PartApproval/index.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/PartApproval/notification.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/PartApproval/notification.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/PartApproval/requests.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/PartApproval/requests.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/PurchaseRequisition/index.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/PurchaseRequisition/index.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/PurchaseRequisition/notification.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/PurchaseRequisition/notification.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/PurchaseRequisition/requests.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/PurchaseRequisition/requests.ctp" afterDir="false" />
     </list>
     <ignored path="engmodule.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,20 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="menus.ctp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Template/Element/menus.ctp">
+      <file leaf-file-name="add.ctp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Template/BOM/add.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="53" column="49" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PartMasterListController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/PartMasterListController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="146" column="40" selection-start-line="146" selection-start-column="40" selection-end-line="146" selection-end-column="40" />
+            <state relative-caret-position="28">
+              <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -72,31 +38,10 @@
       <file leaf-file-name="BOMController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/BOMController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="450" column="5" selection-start-line="450" selection-start-column="5" selection-end-line="450" selection-end-column="5" />
+            <state relative-caret-position="114">
+              <caret line="199" column="46" selection-start-line="199" selection-start-column="46" selection-end-line="199" selection-end-column="46" />
               <folding>
                 <element signature="e#33#66#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/AppController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="57" column="38" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard.ctp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Template/BOM/dashboard.ctp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-              <folding>
-                <element signature="n#style#0;n#h1#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,7 +75,6 @@
         <option value="$PROJECT_DIR$/src/Template/Drawing/index.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Drawing/notification.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Drawing/check.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/BOM/add.ctp" />
         <option value="$PROJECT_DIR$/src/Template/BOM/notification.ctp" />
         <option value="$PROJECT_DIR$/src/Template/BOM/check.ctp" />
         <option value="$PROJECT_DIR$/src/Template/BOM/index.ctp" />
@@ -155,10 +99,11 @@
         <option value="$PROJECT_DIR$/src/Template/PurchaseRequisition/requests.ctp" />
         <option value="$PROJECT_DIR$/src/Template/PurchaseRequisition/notification.ctp" />
         <option value="$PROJECT_DIR$/src/Template/BOM/dashboard.ctp" />
-        <option value="$PROJECT_DIR$/src/Controller/BOMController.php" />
         <option value="$PROJECT_DIR$/src/Controller/AppController.php" />
         <option value="$PROJECT_DIR$/src/Controller/PartMasterListController.php" />
         <option value="$PROJECT_DIR$/src/Template/Element/menus.ctp" />
+        <option value="$PROJECT_DIR$/src/Controller/BOMController.php" />
+        <option value="$PROJECT_DIR$/src/Template/BOM/add.ctp" />
       </list>
     </option>
   </component>
@@ -320,12 +265,12 @@
       <updated>1496566912611</updated>
       <workItem from="1527670073212" duration="1464000" />
       <workItem from="1527676135401" duration="4351000" />
-      <workItem from="1527741946343" duration="4475000" />
+      <workItem from="1527741946343" duration="5677000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10290000" />
+    <option name="totallyTimeSpent" value="11492000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -418,13 +363,6 @@
     <entry file="file://$PROJECT_DIR$/src/Controller/DrawingController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4296" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/BOM/add.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="599" column="28" selection-start-line="599" selection-start-column="28" selection-end-line="599" selection-end-column="28" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Template/BOM/approve.ctp">
@@ -689,16 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/BOMController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="450" column="5" selection-start-line="450" selection-start-column="5" selection-end-line="450" selection-end-column="5" />
-          <folding>
-            <element signature="e#33#66#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/AppController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -715,8 +643,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Template/Element/menus.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
+        <state relative-caret-position="-532">
           <caret line="53" column="49" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/BOMController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="199" column="46" selection-start-line="199" selection-start-column="46" selection-end-line="199" selection-end-column="46" />
+          <folding>
+            <element signature="e#33#66#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/BOM/add.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
         </state>
       </provider>
     </entry>
