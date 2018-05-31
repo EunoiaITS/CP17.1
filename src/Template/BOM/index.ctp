@@ -63,38 +63,33 @@
                                 <td><?= h($b->supplier3) ?></td>
                                 <td><?= h($b->process4) ?></td>
                                 <td><?= h($b->supplier4) ?></td>
-                                <td><?= $this->Html->link(__('VIEW'), ['action' => 'view', $b->id]) ?></td>
-                                <!--<td>
-                                    <ul>
-                                        <li><a href="<?php echo $this->Url->build(['controller' => 'BOM', 'action' => 'view', $b->id]); ?>"><img class="img-icon" src="<?php echo $this->request->webroot.'assets/img/search.png'; ?>" alt=""></a></li>
-                                        <li><a href="<?php echo $this->Url->build(['controller' => 'BOM', 'action' => 'editRequests', $b->id]); ?>"><i class="fa fa-pencil-square-o fa-2x"></i></a></li>
-                                    </ul>
-                                </td>-->
+                                <td><a href="<?php echo $this->Url->build(['controller' => 'BOM', 'action' => 'view', $b->id]); ?>"><span class="btn btn-primary"> VIEW </span></a></td>
                             </tr>
                             <?php if(isset($b->childParts)){ foreach($b->childParts as $bp): ?>
-                                                                                                                                                                                                 <tr>
-                                                                                                                                                                                                     <td><?php  ?></td>
-                                                                                                                                                                                                     <td><?php echo $bp->partNo; ?></td>
-                                                                                                                                                                                                     <td><?php echo $bp->drawingNo; ?></td>
-                                                                                                                                                                                                     <td><?php echo $bp->revNo; ?></td>
-                                                                                                                                                                                                     <td><?php echo $bp->common; ?></td>
-                                                                                                                                                                                                     <td>-</td>
-                                                                                                                                                                                                     <td><?php echo $bp->quality; ?></td>
-                                                                                                                                                                                                     <td><?php $name= $bp->material;$mname = preg_split('/[(]+/',$name);print_r($mname[0]); ?></td>
-                                                                                                                                                                                                     <td><?php $code= $bp->material;$mcode = preg_split('/[)(]+/',$code);print_r($mcode[1]); ?></td>
-                                                                                                                                                                                                     <td><?php $type= $bp->finishing;$mtype = preg_split('/[(]+/',$type);print_r($mtype[0]); ?></td>
-                                                                                                                                                                                                     <td><?php $code= $bp->finishing;$bcode = preg_split('/[)(]+/',$code);print_r($bcode[1]); ?></td>
-                                                                                                                                                                                                     <td></td>
-                                                                                                                                                                                                     <td></td>
-                                                                                                                                                                                                     <td></td>
-<td></td>                                                                                                                                                                                           <td></td>
-                                                                                                                                                                                                     <td></td>
-                                                                                                                                                                                                     <td></td>
-                                                                                                                                                                                                     
- <td></td>
- <td></td>
- <td></td>                                                                                                                                                                                                </tr>
-                                                                                                                                                                                             <?php endforeach; }?>
+                                <tr>
+                                    <td><?php  ?></td>
+                                    <td><?php echo $bp->partNo; ?></td>
+                                    <td><?php echo $bp->drawingNo; ?></td>
+                                    <td><?php echo $bp->revNo; ?></td>
+                                    <td><?php echo $bp->common; ?></td>
+                                    <td>-</td>
+                                    <td><?php echo $bp->quality; ?></td>
+                                    <td><?php $name= $bp->material;$mname = preg_split('/[(]+/',$name);print_r($mname[0]); ?></td>
+                                    <td><?php $code= $bp->material;$mcode = preg_split('/[)(]+/',$code);print_r($mcode[1]); ?></td>
+                                    <td><?php $type= $bp->finishing;$mtype = preg_split('/[(]+/',$type);print_r($mtype[0]); ?></td>
+                                    <td><?php $code= $bp->finishing;$bcode = preg_split('/[)(]+/',$code);print_r($bcode[1]); ?></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            <?php endforeach; }?>
                         <?php endforeach; ?>
                         </tbody>
                     </table>

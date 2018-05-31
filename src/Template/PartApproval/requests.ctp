@@ -29,9 +29,7 @@
                                 <td><?=$singlePartApproval->remarks?></td>
                                 <td>
                                     <ul>
-                                        <!--<li><a href="<?php echo $this->Url->build(['controller' => 'PartApproval', 'action' => 'editRequests' ,$singlePartApproval->id]); ?>"><img class="img-icon" src="<?=$this->request->webroot.'assets/img/search.png'?>" alt=""></a>-->
-                                        </li>
-                                        <li><a href="<?php echo $this->Url->build(['controller' => 'PartApproval', 'action' => 'editRequests' ,$singlePartApproval->id]); ?>"><i class="fa fa-pencil-square-o fa-2x"></i></a></li>
+                                        <li><a href="<?php echo $this->Url->build(['controller' => 'PartApproval', 'action' => 'editRequests' ,$singlePartApproval->id]); ?>"><span class="btn btn-primary"> EDIT </span></a></li>
                                     </ul>
                                 </td>
                             </tr>

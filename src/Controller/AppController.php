@@ -46,16 +46,16 @@ class AppController extends Controller
         $this->loadComponent('Auth', [
             'authorize' => ['Controller'],
             'loginRedirect' => [
-                'controller' => 'Drawing',
-                'action' => 'add'
+                'controller' => 'Bom',
+                'action' => 'Dashboard'
             ],
             'logoutRedirect' => [
                 'controller' => 'Users',
                 'action' => 'login'
             ],
             'unauthorizedRedirect' => [
-                'controller' => 'Drawing',
-                'action' => 'index',
+                'controller' => 'Bom',
+                'action' => 'dashboard',
                 'prefix' => false
             ]
         ]);

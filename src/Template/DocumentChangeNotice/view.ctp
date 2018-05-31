@@ -2,12 +2,6 @@
       Drawing page area
       ==============-->
 
-<?php
-//echo '<pre>';
-//print_r($documentChangeNotice);
-//exit();
-?>
-
 <div class="drawing-from">
     <div class="container">
         <div class="row">
@@ -125,15 +119,13 @@
 
                     </div>
                 </div>
-
                 <!-- reason for change -->
                 <div class="row">
                     <hr>
                     <div class="col-sm-12 padding-top-20">
                         <div class="col-sm-6">
                             <div class="col-sm-6 col-xs-6">
-                                <span class="label-drawing">Reason for Change<span
-                                            class="project-name-sem">:</span></span>
+                                <span class="label-drawing">Reason for Change<span class="project-name-sem">:</span></span>
                             </div>
                             <div class="col-sm-6 col-xs-6">
                                 <span class="text-uppercase"><?= $documentChangeNotice->resChange ?></span>
@@ -141,8 +133,7 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="col-sm-6 col-xs-6">
-                                <span class="label-drawing">Detail of Changes<span
-                                            class="project-name-sem">:</span></span>
+                                <span class="label-drawing">Detail of Changes<span class="project-name-sem">:</span></span>
                             </div>
                             <div class="col-sm-6 col-xs-6">
                                 <span class="text-uppercase"><?= $documentChangeNotice->detailChange ?></span>
@@ -156,8 +147,7 @@
                         <div class="col-sm-8 col-xs-12">
                             <div class="form-group dcn-upload">
                                 <div class="col-sm-6 col-md-5 col-xs-6">
-                                    <label for="dcn-change-reason" class="label-drawing">Upload <span
-                                                class="project-name-sem">:</span></label>
+                                    <label for="dcn-change-reason" class="label-drawing">Upload <span class="project-name-sem">:</span></label>
                                 </div>
                                 <div class="col-sm-6 col-xs-6">
                                     <span class="purchase-img"><a href="<?php echo $this->request->webroot.$documentChangeNotice->upload; ?>">Attachment 1</a></span>
@@ -168,7 +158,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 </div>
 

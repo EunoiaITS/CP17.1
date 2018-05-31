@@ -50,13 +50,7 @@
                             <td><?= $singlePurchaseRequisition->remarks;?></td>
                             <td></td>
                             <td></td>
-                            <td><a href="<?php echo $this->Url->build(['controller' => 'PurchaseRequisition', 'action' => 'view',$singlePurchaseRequisition->id]); ?>">View</a></td>
-                            <!--<td>
-                                <ul>
-                                    <li><a href="<?php echo $this->Url->build(['controller' => 'PurchaseRequisition', 'action' => 'view',$singlePurchaseRequisition->id]); ?>"><img class="img-icon" src="<?php echo $this->request->webroot.'assets/img/search.png'?>" alt=""></a></li>
-                                    <li><a href="<?php echo $this->Url->build(['controller' => 'PurchaseRequisition', 'action' => 'editRequests', $singlePurchaseRequisition->id]); ?>"><i class="fa fa-pencil-square-o fa-2x"></i></a></li>
-                                </ul>
-                            </td>-->
+                            <td><a href="<?php echo $this->Url->build(['controller' => 'PurchaseRequisition', 'action' => 'view',$singlePurchaseRequisition->id]); ?>"><span class="btn btn-primary"> VIEW </span></a></td>
                         </tr>
                             <?php
                             $i++;

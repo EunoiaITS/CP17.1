@@ -28,7 +28,7 @@
                 </div>
             </div>
         </li>
-        <li><a href="login.html" class="active">Home</a></li>
+        <li><a href="<?php echo $this->Url->build(['controller'=>'Bom','action'=>'dashboard'])?>" class="active">Home (Dashboard)</a></li>
         <div class="btn-group-vertical" role="group" class="dropdown">
             <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                 DRAWING &nbsp;
@@ -51,7 +51,9 @@
                 <span class="caret"></span>
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="<?php echo $this->Url->build(['controller' => 'PartMasterList', 'action' => 'add']); ?>">Create Master List</a></li>
+                <?php if ($role == 'eng-personnel'): ?>
+                    <li><a href="<?php echo $this->Url->build(['controller' => 'PartMasterList', 'action' => 'add']); ?>">Create Master List</a></li>
+                <?php endif;?>
                 <li><a href="<?php echo $this->Url->build(['controller' => 'PartMasterList', 'action' => 'index']); ?>">View Master List</a></li>
             </ul>
         </div>

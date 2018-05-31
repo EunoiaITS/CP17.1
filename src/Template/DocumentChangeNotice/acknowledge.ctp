@@ -1,9 +1,3 @@
-<?php
-//echo '<pre>';
-//print_r($documentChangeNotice);
-//exit();
-?>
-
 <div class="drawing-from">
     <div class="container">
         <div class="row">

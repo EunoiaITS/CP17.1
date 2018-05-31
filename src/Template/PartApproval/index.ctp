@@ -1,9 +1,3 @@
-<?php
-//echo '<pre>';
-//print_r($partApproval);
-//exit();
-?>
-
 <div class="drawing-from">
     <div class="container">
         <div class="row">
@@ -40,14 +34,7 @@
                                 <td><?=$singlePartApproval->issued_date?></td>
                                 <td><?=$singlePartApproval->status?></td>
                                 <td><?=$singlePartApproval->remarks?></td>
-                                <td><a href="<?php echo $this->Url->build(['controller' => 'PartApproval', 'action' => 'view',$singlePartApproval->id]); ?>">VIEW</a></td>
-                                <!--<td>
-                                    <ul>
-                                        <li><a href="#"><img class="img-icon" src="assets/img/search.png" alt=""></a>
-                                        </li>
-                                        <li><a href="<?php echo $this->Url->build(['controller' => 'PartApproval', 'action' => 'editRequests', $singlePartApproval->id]); ?>"><i class="fa fa-pencil-square-o fa-2x"></i></a></li>
-                                    </ul>
-                                </td>-->
+                                <td><a href="<?php echo $this->Url->build(['controller' => 'PartApproval', 'action' => 'view',$singlePartApproval->id]); ?>"><span class="btn btn-primary"> VIEW </span></a></td>
                             </tr>
                             <?php $i++;
                         } ?>

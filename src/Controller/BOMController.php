@@ -23,6 +23,9 @@ class BOMController extends AppController
         parent::initialize();
         $this->viewBuilder()->setLayout('mainframe');
     }
+    public function dashboard(){
+
+    }
 
     /**
      * Index method
@@ -326,30 +329,28 @@ class BOMController extends AppController
 
     public function isAuthorized($user){
         // All registered users can add articles
-        if ($this->request->getParam('action') === 'index' || $this->request->getParam('action') === 'view') {
+        if ($this->request->getParam('action') === 'index' || $this->request->getParam('action') === 'view' || $this->request->getParam('action') === 'dashboard') {
             return true;
         }
 
         if(isset($user['role']) && $user['role'] === 'eng-personnel'){
-            if(in_array($this->request->action, ['add', 'edit', 'requests', 'editRequests'])){
+            if(in_array($this->request->action, ['add', 'edit', 'requests', 'editRequests','dashboard'])){
                 return true;
             }
         }
 
         if(isset($user['role']) && $user['role'] === 'consultant'){
-            if(in_array($this->request->action, ['notification', 'check', 'edit'])){
+            if(in_array($this->request->action, ['notification', 'check', 'edit','dashboard'])){
                 return true;
             }
         }
 
         if(isset($user['role']) && $user['role'] === 'marketing-director'){
-            if(in_array($this->request->action, ['notification', 'approve', 'edit'])){
+            if(in_array($this->request->action, ['notification', 'approve', 'edit','dashboard'])){
                 return true;
             }
         }
-
         return parent::isAuthorized($user);
-
     }
 
     public function requests(){
@@ -448,5 +449,4 @@ class BOMController extends AppController
         $this->set('part_name', $part_name);
         $this->set('drawing_no', $drawing_no);
     }
-
 }

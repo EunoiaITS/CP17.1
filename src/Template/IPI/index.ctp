@@ -31,9 +31,7 @@
                                 <td><?= h($iPI->supplier) ?></td>
                                 <td><?= h($iPI->requested_by) ?></td>
                                 <td><?= h($iPI->remarks) ?></td>
-                                <td><a href="<?php echo $this->Url->build(['controller' => 'IPI', 'action' => 'view', $iPI->id]); ?>">View</a>
-                                        <!--<li><a href="<?php echo $this->Url->build(['controller' => 'IPI', 'action' => 'editRequests', $iPI->id]); ?>"><i class="fa fa-pencil-square-o fa-2x"></i></a></li>-->
-                                    
+                                <td><a href="<?php echo $this->Url->build(['controller' => 'IPI', 'action' => 'view', $iPI->id]); ?>"><span class="btn btn-primary"> VIEW </span></a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

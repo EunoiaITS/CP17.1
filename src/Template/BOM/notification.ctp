@@ -39,7 +39,7 @@
                                 <td><?php echo date('Y-m-d', strtotime($bom->created)); ?></td>
                                 <td><?= h($bom->requested_by) ?></td>
                                 <td></td>
-<td><a href="<?php echo $this->Url->build(['controller' =>'BOM','action'=> $boms->action, $bom->id]); ?>"><i class="fa fa-pencil-square-o fa-2x"></i></a></td>
+<td><a href="<?php echo $this->Url->build(['controller' =>'BOM','action'=> $boms->action, $bom->id]); ?>"><span class="btn btn-primary"> VIEW </span></a></td>
                             </tr>
                         <?php endforeach; ?>
                         </tbody>

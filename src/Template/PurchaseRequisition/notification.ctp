@@ -1,12 +1,6 @@
 <!--=========
       Drawing Notification page
       ==============-->
-<?php
-//echo'<pre>';
-//print_r($purchaseRequisition);
-//exit();
-
-?>
 
 <div class="drawing-from">
     <div class="container">
@@ -44,7 +38,7 @@
 
                                 <td>
                                     <ul>
-                                        <li><a href="<?php echo $this->Url->build(['controller' => 'PurchaseRequisition', 'action' => $purchaseRequisition->action, $singlePurchaseRequisition->id]); ?>"><img class="img-icon" src="<?php echo $this->request->webroot.'assets/img/search.png'?>" alt=""></a></li>
+                                        <li><a href="<?php echo $this->Url->build(['controller' => 'PurchaseRequisition', 'action' => $purchaseRequisition->action, $singlePurchaseRequisition->id]); ?>"><span class="btn btn-primary"> VIEW </span></a></li>
                                     </ul>
                                 </td>
                             </tr>

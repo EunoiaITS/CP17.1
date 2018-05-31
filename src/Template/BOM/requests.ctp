@@ -27,7 +27,7 @@
                             <th>Issue Date</th>
                             <th>P.I.C</th>
                             <th>Remarks</th>
-<th>Actions</th>
+                            <th>Actions</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -38,7 +38,7 @@
                                 <td><?php echo date('Y-m-d', strtotime($bom->created)); ?></td>
                                 <td><?= h($bom->requested_by) ?></td>
                                 <td></td>
-<td><a href="<?php echo $this->Url->build(['controller' => 'BOM', 'action' => 'editRequests', $bom->id]); ?>"><i class="fa fa-pencil-square-o fa-2x"></i></a></td>
+                                <td><a href="<?php echo $this->Url->build(['controller' => 'BOM', 'action' => 'editRequests', $bom->id]); ?>"><span class="btn btn-primary"> EDIT </span></a></td>
                             </tr>
                         <?php endforeach; ?>
                         </tbody>

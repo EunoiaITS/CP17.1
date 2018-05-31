@@ -36,13 +36,7 @@
                             <td><?=$singleDocumentChangeNotice->status?></td>
                             <td><?=$singleDocumentChangeNotice->remarks?></td>
                             <td><?=$singleDocumentChangeNotice->dcnNo?></td>
-                            <td><a href="<?php echo $this->Url->build(['controller' => 'DocumentChangeNotice', 'action' => 'view',$singleDocumentChangeNotice->id]); ?>">View</a></td>
-                            <!--<td>
-                                <ul>
-                                    <li><a href="#"><img class="img-icon" src="assets/img/search.png" alt=""></a></li>
-                                    <li><a href="<?php echo $this->Url->build(['controller' => 'DocumentChangeNotice', 'action' => 'editRequests', $singleDocumentChangeNotice->id]); ?>"><i class="fa fa-pencil-square-o fa-2x"></i></a></li>
-                                </ul>
-                            </td>-->
+                            <td><a href="<?php echo $this->Url->build(['controller' => 'DocumentChangeNotice', 'action' => 'view',$singleDocumentChangeNotice->id]); ?>"><span class="btn btn-primary"> VIEW </span></a></td>
                         </tr>
                             <?php
                             $i++;

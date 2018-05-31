@@ -33,8 +33,7 @@
                                 <td><?= h($iPI->remarks) ?></td>
                                 <td>
                                     <ul>
-                                        <li><a href="<?php echo $this->Url->build(['controller' => 'IPI', 'action' => 'checkAndPrepare', $iPI->id]); ?>"><img class="img-icon" src="<?php echo $this->request->webroot.'assets/img/search.png'; ?>" alt=""></a></li>
-                                        <li><a href="#"><i class="fa fa-pencil-square-o fa-2x"></i></a></li>
+                                        <li><a href="<?php echo $this->Url->build(['controller' => 'IPI', 'action' => 'checkAndPrepare', $iPI->id]); ?>"><span class="btn btn-primary"> VIEW </span></a></li>
                                     </ul>
                                 </td>
                             </tr>

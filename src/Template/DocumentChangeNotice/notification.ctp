@@ -1,13 +1,6 @@
 <!--=========
 Drawing Notification page
 ==============-->
-
-<?php
-//echo '<pre>';
-//print_r($documentChangeNotice);
-//exit();
-?>
-
 <div class="drawing-from">
     <div class="container">
         <div class="row">
@@ -37,9 +30,7 @@ Drawing Notification page
                                 <td><?= h($singleDocumentChangeNotice->remarks) ?></td>
                                 <td>
                                     <ul>
-                                        <li><a href="<?php echo $this->Url->build(['controller' => 'DocumentChangeNotice', 'action' => $dcns->action ,$singleDocumentChangeNotice->id]); ?>"><img class="img-icon" src="<?php echo $this->request->webroot.'assets/img/search.png';?>" alt=""></a>
-                                        </li>
-                                        <li><a href="#"><i class="fa fa-pencil-square-o fa-2x"></i></a></li>
+                                        <li><a href="<?php echo $this->Url->build(['controller' => 'DocumentChangeNotice', 'action' => $dcns->action ,$singleDocumentChangeNotice->id]); ?>"><span class="btn btn-primary"> VIEW </span></a></li>
                                     </ul>
                                 </td>
                             </tr>

@@ -145,7 +145,6 @@ class PartMasterListController extends AppController
     }
 
     public function isAuthorized($user){
-        // All registered users can add articles
         if ($this->request->getParam('action') === 'index' || $this->request->getParam('action') === 'view') {
             return true;
         }
