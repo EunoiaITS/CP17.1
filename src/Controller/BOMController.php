@@ -34,7 +34,6 @@ class BOMController extends AppController
      */
     public function index()
     {
-        //$this->autoRender = false;
         $bOM = $this->paginate($this->BOM);
         $this->set('_serialize', ['bOM']);
         $this->set(compact('bOM'));
