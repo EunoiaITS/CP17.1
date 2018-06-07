@@ -143,7 +143,7 @@
                                         <label for="parts-size-matarial" class="label-drawing">Size <span class="project-name-sem">:</span></label>
                                     </div>
                                     <div class="col-sm-6 col-xs-6">
-                                        <input name="size" type="text" id="parts-size-matarial" placeholder="Part No" class="form-control"/>
+                                        <input name="size" type="text" id="parts-size-matarial" class="form-control"/>
                                     </div>
                                 </div>
                             </div>
@@ -324,7 +324,7 @@ foreach($material as $val){
                    '<div class="form-group">' +
                    '<div class="col-sm-6 col-md-4">' +
                    '<label for="part-quality-process2" class="label-drawing">Process 2<span class="project-name-sem">:</span></label>' +
-                   '</div>\n' +
+                   '</div>' +
                    '<div class="col-sm-6 ">' +
                    '<input name="process2" type="text" id="part-quality-process2" class="form-control"/>' +
                    '</div>' +
@@ -536,7 +536,7 @@ foreach($material as $val){
             '<label for="parts-size-matarial" class="label-drawing">Size <span class="project-name-sem">:</span></label>'+
             '</div>'+
             '<div class="col-sm-6 col-xs-6">'+
-            '<input name="size'+total+'" type="text" id="parts-size-matarial" placeholder="Part No" class="form-control"/>'+
+            '<input name="size'+total+'" type="text" id="parts-size-matarial" class="form-control"/>'+
             '</div>'+
             '</div>'+
             '</div>'+
