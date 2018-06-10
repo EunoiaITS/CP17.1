@@ -442,19 +442,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BOMController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BOMController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/BOMController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="130" column="41" selection-start-line="130" selection-start-column="41" selection-end-line="130" selection-end-column="41" />
+            <state relative-caret-position="982">
+              <caret line="160" column="97" selection-start-line="160" selection-start-column="97" selection-end-line="160" selection-end-column="97" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add.ctp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="add.ctp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Template/BOM/add.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
+            <state relative-caret-position="-1036">
               <caret line="372" column="29" selection-start-line="372" selection-start-column="29" selection-end-line="372" selection-end-column="29" />
             </state>
           </provider>
@@ -470,6 +470,7 @@
       <list>
         <option value="$PROJECT_DIR$/src/Template/Drawing/view.ctp" />
         <option value="$PROJECT_DIR$/src/Template/BOM/add.ctp" />
+        <option value="$PROJECT_DIR$/src/Controller/BOMController.php" />
       </list>
     </option>
   </component>
@@ -614,12 +615,12 @@
       <workItem from="1528262830889" duration="309000" />
       <workItem from="1528350320339" duration="919000" />
       <workItem from="1528370076146" duration="78000" />
-      <workItem from="1528607012370" duration="1635000" />
+      <workItem from="1528607012370" duration="1795000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4967000" />
+    <option name="totallyTimeSpent" value="5127000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -996,17 +997,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/BOMController.php">
+    <entry file="file://$PROJECT_DIR$/src/Template/BOM/add.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="130" column="41" selection-start-line="130" selection-start-column="41" selection-end-line="130" selection-end-column="41" />
+        <state relative-caret-position="-1036">
+          <caret line="372" column="29" selection-start-line="372" selection-start-column="29" selection-end-line="372" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/BOM/add.ctp">
+    <entry file="file://$PROJECT_DIR$/src/Controller/BOMController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="372" column="29" selection-start-line="372" selection-start-column="29" selection-end-line="372" selection-end-column="29" />
+        <state relative-caret-position="982">
+          <caret line="160" column="97" selection-start-line="160" selection-start-column="97" selection-end-line="160" selection-end-column="97" />
         </state>
       </provider>
     </entry>

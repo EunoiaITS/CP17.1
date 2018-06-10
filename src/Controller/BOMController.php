@@ -135,33 +135,6 @@ class BOMController extends AppController
                 if($this->request->getData('total') != null){
                     $bomChild = TableRegistry::get('BOMParts');
                     $bomData = array();
-                    if($bom_cat == 'Customize'){
-                        for($i = 2; $i <= $this->request->getData('total'); $i++){
-                            $bomData[$i]['bomId'] = $bom_no['id'];
-                            $bomData[$i]['partNo'] = $this->request->getData('partNo'.$i);
-                            $bomData[$i]['partName'] = $this->request->getData('partName'.$i);
-                            $bomData[$i]['drawingNo'] = $this->request->getData('drawingNo'.$i);
-                            $bomData[$i]['revNo'] = $this->request->getData('revNo'.$i);
-                            $bomData[$i]['material'] = $this->request->getData('material'.$i);
-                            $bomData[$i]['finishing'] = $this->request->getData('finishing'.$i);
-                            $bomData[$i]['common'] = $this->request->getData('common'.$i);
-                            $bomData[$i]['size'] = $this->request->getData('size'.$i);
-                            $bomData[$i]['quality'] = $this->request->getData('quality'.$i);
-                            $bomData[$i]['category'] = $this->request->getData('category'.$i);
-                            $bomData[$i]['process1'] = $this->request->getData('process1-'.$i);
-                            $bomData[$i]['process2'] = $this->request->getData('process2-'.$i);
-                            $bomData[$i]['process3'] = $this->request->getData('process3-'.$i);
-                            $bomData[$i]['process4'] = $this->request->getData('process4-'.$i);
-                            $bomData[$i]['process5'] = $this->request->getData('process5-'.$i);
-                            $bomData[$i]['process6'] = $this->request->getData('process6-'.$i);
-                            $bomData[$i]['supplier1'] = $this->request->getData('supplier1-'.$i);
-                            $bomData[$i]['supplier2'] = $this->request->getData('supplier2-'.$i);
-                            $bomData[$i]['supplier3'] = $this->request->getData('supplier3-'.$i);
-                            $bomData[$i]['supplier4'] = $this->request->getData('supplier4-'.$i);
-                            $bomData[$i]['supplier5'] = $this->request->getData('supplier5-'.$i);
-                            $bomData[$i]['supplier6'] = $this->request->getData('supplier6-'.$i);
-                        }
-                    }else{
                         for($i = 1; $i <= $this->request->getData('total'); $i++){
                             $bomData[$i]['bomId'] = $bom_no['id'];
                             $bomData[$i]['partNo'] = $this->request->getData('partNo'.$i);
@@ -186,7 +159,6 @@ class BOMController extends AppController
                             $bomData[$i]['supplier4'] = $this->request->getData('supplier4-'.$i);
                             $bomData[$i]['supplier5'] = $this->request->getData('supplier5-'.$i);
                             $bomData[$i]['supplier6'] = $this->request->getData('supplier6-'.$i);
-                        }
                     }
                     $boms = $bomChild->newEntities($bomData);
                     foreach($boms as $bom){
