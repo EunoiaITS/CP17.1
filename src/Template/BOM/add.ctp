@@ -143,7 +143,7 @@
                                         <label for="parts-size-matarial" class="label-drawing">Size <span class="project-name-sem">:</span></label>
                                     </div>
                                     <div class="col-sm-6 col-xs-6">
-                                        <input name="size" type="text" id="parts-size-matarial" class="form-control"/>
+                                        <input name="size" type="text" id="parts-size-matarial" placeholder="Part No" class="form-control"/>
                                     </div>
                                 </div>
                             </div>
@@ -179,10 +179,10 @@
 		    				<div class="col-sm-6">
 		            			<div class="form-group">
 	                                <div class="col-sm-6 col-md-4 col-xs-6">
-	                                    <label for="part-model-category" class="label-drawing">Category<span class="project-name-sem">:</span></label>
+	                                    <label for="part-model" class="label-drawing">Category<span class="project-name-sem">:</span></label>
 	                                </div>
 	                                <div class="col-sm-6 col-xs-6">
-	                                    <select name="category" class="form-control" id="part-model-category">
+	                                    <select name="category" class="form-control part-model-category" rel="1" id="part-model">
 	                                        <option>Please Select</option>
 	                                        <option value="Direct Item">Direct Item</option>
 	                                        <option value="Customize">Customize</option>
@@ -196,7 +196,7 @@
                     </div>
 
                     <div class="row secoundbar">
-	            		<div class="col-sm-12" id="process">
+	            		<div class="col-sm-12" id="process1">
 		           		</div>
                     </div>
 
@@ -229,81 +229,19 @@ foreach($material as $val){
 ?>
 <script>
     $(document).ready(function(){
-        $('#part-model-category').on('change',function (e) {
+        var category = '.part-model-category';
+        var count = 1;
+        $(document).on('change',category,function (e) {
+           var rel = $(this).attr('rel');
            e.preventDefault();
-           var cat = $(this).val();
-           if(cat == 'Customize'){
-                $('#process').html(
-                    '<div class="col-sm-6">' +
-                    '<div class="form-group">' +
-                    '<div class="col-sm-6 col-md-4">' +
-                    '<label for="part-quality-process1" class="label-drawing">Process 1<span class="project-name-sem">:</span></label>' +
-                    '</div>' +
-                    '<div class="col-sm-6 ">' +
-                    '<input name="process1" type="text" id="part-quality-process1" class="form-control"/>' +
-                    '</div>' +
-                    '</div>' +
-                    '</div>' +
-                    '<div class="col-sm-6">' +
-                    '<div class="form-group">' +
-                    '<div class="col-sm-6 col-md-4">' +
-                    '<label for="part-quality-process2" class="label-drawing">Process 2<span class="project-name-sem">:</span></label>' +
-                    '</div>' +
-                    '<div class="col-sm-6 ">' +
-                    '<input name="process2" type="text" id="part-quality-process2" class="form-control"/>' +
-                    '</div>' +
-                    '</div>' +
-                    '</div>' +
-                    '<div class="col-sm-6">' +
-                    '<div class="form-group">' +
-                    '<div class="col-sm-6 col-md-4">' +
-                    '<label for="part-quality-process3" class="label-drawing">Process 3<span class="project-name-sem">:</span></label>' +
-                    '</div>' +
-                    '<div class="col-sm-6 ">' +
-                    '<input name="process3" type="text" id="part-quality-process3" class="form-control"/>' +
-                    '</div>' +
-                    '</div>' +
-                    '</div>' +
-                    '<div class="col-sm-6">' +
-                    '<div class="form-group">' +
-                    '<div class="col-sm-6 col-md-4">' +
-                    '<label for="part-quality-process4" class="label-drawing">Process 4<span class="project-name-sem">:</span></label>' +
-                    '</div>' +
-                    '<div class="col-sm-6">' +
-                    '<input name="process4" type="text" id="part-quality-process4" class="form-control"/>' +
-                    '</div>' +
-                    '</div>' +
-                    '</div>' +
-                    '<div class="col-sm-6">' +
-                    '<div class="form-group">' +
-                    '<div class="col-sm-6 col-md-4">' +
-                    '<label for="part-quality-process5" class="label-drawing">Process 5<span class="project-name-sem">:</span></label>' +
-                    '</div>' +
-                    '<div class="col-sm-6">' +
-                    '<input name="process5" type="text" id="part-quality-process5" class="form-control"/>' +
-                    '</div>' +
-                    '</div>' +
-                    '</div>' +
-                    '</div>' +
-                    '<div class="col-sm-6">' +
-                    '<div class="form-group">' +
-                    '<div class="col-sm-6 col-md-4">' +
-                    '<label for="part-quality-process6" class="label-drawing">Process 6<span class="project-name-sem">:</span></label>' +
-                    '</div>' +
-                    '<div class="col-sm-6">' +
-                    '<input name="process6" type="text" id="part-quality-process6" class="form-control"/>' +
-                    '</div>' +
-                    '</div>' +
-                    '</div>');
-           }else{
-               $('#process').html('<div class="clearfix suplier-3">' +
+               $('#process'+rel).html('<div class="clearfix suplier-3">' +
                    '<div class="col-sm-6">' +
                    '<div class="form-group">' +
                    '<div class="col-sm-6 col-md-4">' +
                    '<label for="part-quality-process1" class="label-drawing">Process 1<span class="project-name-sem">:</span></label>\n' +
                    '</div>' +
                    '<div class="col-sm-6 ">' +
-                   '<input name="process1" type="text" id="part-quality-process1" class="form-control"/>\n' +
+                   '<input name="process1-'+count+'" type="text" id="part-quality-process1" class="form-control"/>\n' +
                    '</div>' +
                    '</div>' +
                    '</div>' +
@@ -314,7 +252,7 @@ foreach($material as $val){
                    '<label for="supplier1" class="label-drawing">Supplier 1<span class="project-name-sem">:</span></label>' +
                    '</div>' +
                    '<div class="col-sm-6 ">' +
-                   '<input name="supplier1" type="text" id="supplier1" class="form-control"/>' +
+                   '<input name="supplier1-'+count+'" type="text" id="supplier1" class="form-control"/>' +
                    '</div>' +
                    '</div>' +
                    '</div>' +
@@ -326,7 +264,7 @@ foreach($material as $val){
                    '<label for="part-quality-process2" class="label-drawing">Process 2<span class="project-name-sem">:</span></label>' +
                    '</div>' +
                    '<div class="col-sm-6 ">' +
-                   '<input name="process2" type="text" id="part-quality-process2" class="form-control"/>' +
+                   '<input name="process2-'+count+'" type="text" id="part-quality-process2" class="form-control"/>' +
                    '</div>' +
                    '</div>' +
                    '</div>' +
@@ -336,7 +274,7 @@ foreach($material as $val){
                    '<label for="supplier2" class="label-drawing">Supplier 2<span class="project-name-sem">:</span></label>' +
                    '</div>' +
                    '<div class="col-sm-6 ">' +
-                   '<input name="supplier2" type="text" id="supplier2" class="form-control"/>' +
+                   '<input name="supplier2-'+count+'" type="text" id="supplier2" class="form-control"/>' +
                    '</div>' +
                    '</div>' +
                    '</div>' +
@@ -348,7 +286,7 @@ foreach($material as $val){
                    '<label for="part-quality-process3" class="label-drawing">Process 3<span class="project-name-sem">:</span></label>' +
                    '</div>' +
                    '<div class="col-sm-6 ">' +
-                   '<input name="process3" type="text" id="part-quality-process3" class="form-control"/>' +
+                   '<input name="process3-'+count+'" type="text" id="part-quality-process3" class="form-control"/>' +
                    '</div>' +
                    '</div>' +
                    '</div>' +
@@ -358,7 +296,7 @@ foreach($material as $val){
                    '<label for="supplier3" class="label-drawing">Supplier 3<span class="project-name-sem">:</span></label>' +
                    '</div>' +
                    '<div class="col-sm-6 ">' +
-                   '<input name="supplier3" type="text" id="supplier3" class="form-control"/>' +
+                   '<input name="supplier3-'+count+'" type="text" id="supplier3" class="form-control"/>' +
                    '</div>' +
                    '</div>' +
                    '</div>' +
@@ -370,7 +308,7 @@ foreach($material as $val){
                    '<label for="part-quality-process4" class="label-drawing">Process 4<span class="project-name-sem">:</span></label>' +
                    '</div>' +
                    '<div class="col-sm-6">' +
-                   '<input name="process4" type="text" id="part-quality-process4" class="form-control"/>' +
+                   '<input name="process4-'+count+'" type="text" id="part-quality-process4" class="form-control"/>' +
                    '</div>' +
                    '</div>' +
                    '</div>' +
@@ -380,11 +318,11 @@ foreach($material as $val){
                    '<label for="supplier4" class="label-drawing">Supplier 4<span class="project-name-sem">:</span></label>' +
                    '</div>' +
                    '<div class="col-sm-6 ">' +
-                   '<input name="supplier4" type="text" id="supplier4" class="form-control"/>' +
+                   '<input name="supplier4-'+count+'" type="text" id="supplier4" class="form-control"/>' +
                    '</div>' +
                    '</div>' +
                    '</div>' +
-                   '</div>' +
+                   '</div>'+
                    '<div class="clearfix suplier-3">' +
                    '<div class="col-sm-6">' +
                    '<div class="form-group">' +
@@ -392,22 +330,47 @@ foreach($material as $val){
                    '<label for="part-quality-process5" class="label-drawing">Process 5<span class="project-name-sem">:</span></label>' +
                    '</div>' +
                    '<div class="col-sm-6">' +
-                   '<input name="process5" type="text" id="part-quality-process5" class="form-control"/>' +
-                   '</div>' +
+                   '<input name="process5-'+count+'" type="text" id="part-quality-process5" class="form-control"/>' +
                    '</div>' +
                    '</div>' +
                    '</div>' +
                    '<div class="col-sm-6">' +
                    '<div class="form-group">' +
                    '<div class="col-sm-6 col-md-4">' +
+                   '<label for="supplier5" class="label-drawing">Supplier 5<span class="project-name-sem">:</span></label>' +
+                   '</div>' +
+                   '<div class="col-sm-6 ">' +
+                   '<input name="supplier5-'+count+'" type="text" id="supplier5" class="form-control"/>' +
+                   '</div>' +
+                   '</div>' +
+                   '</div>' +
+                   '</div>'+
+                   '<div class="clearfix suplier-3">' +
+                   '<div class="col-sm-6">' +
+                   '<div class="form-group">' +
+                   '<div class="col-sm-6 col-md-4">' +
                    '<label for="part-quality-process6" class="label-drawing">Process 6<span class="project-name-sem">:</span></label>' +
                    '</div>' +
                    '<div class="col-sm-6">' +
-                   '<input name="process6" type="text" id="part-quality-process6" class="form-control"/>' +
+                   '<input name="process6-'+count+'" type="text" id="part-quality-process6" class="form-control"/>' +
                    '</div>' +
+                   '</div>' +
+                   '</div>' +
+                   '<div class="col-sm-6">' +
+                   '<div class="form-group">' +
+                   '<div class="col-sm-6 col-md-4">' +
+                   '<label for="supplier6" class="label-drawing">Supplier 6<span class="project-name-sem">:</span></label>' +
+                   '</div>' +
+                   '<div class="col-sm-6 ">' +
+                   '<input name="supplier6-'+count+'" type="text" id="supplier6" class="form-control"/>' +
+                   '</div>' +
+                   '</div>' +
+                   '</div>' +
+                   '</div>'+
+                   '<div class="row secoundbar">' +
+                   '<div class="col-sm-12" id="process'+count+'">' +
                    '</div>' +
                    '</div>');
-           }
         });
         $('#cn-version').html('<option value="ZZT">ZZT</option>'+
             '<option value="ZZTT">ZZTT</option>'+
@@ -451,10 +414,11 @@ foreach($material as $val){
                 $('#cn-version').html('<option value="">No Version</option>');
             }
         });
-        var total = 0;
+        var total = 1;
         var materials = '<?php echo $materials; ?>';
         var finishings = '<?php echo $finishings; ?>';
         $('#add-childs').on('click', function(e){
+            count++;
             e.preventDefault();
             total++;
             var addChild = '<hr><div class="row secoundbar">'+
@@ -536,7 +500,7 @@ foreach($material as $val){
             '<label for="parts-size-matarial" class="label-drawing">Size <span class="project-name-sem">:</span></label>'+
             '</div>'+
             '<div class="col-sm-6 col-xs-6">'+
-            '<input name="size'+total+'" type="text" id="parts-size-matarial" class="form-control"/>'+
+            '<input name="size'+total+'" type="text" id="parts-size-matarial" placeholder="Part No" class="form-control"/>'+
             '</div>'+
             '</div>'+
             '</div>'+
@@ -564,6 +528,30 @@ foreach($material as $val){
             '</div>'+
             '</div>'+
             '</div>'+
+            '<div class="row secoundbar">' +
+                '<div class="col-sm-12">' +
+                '<div class="col-sm-6">' +
+                '<div class="form-group">' +
+                '<div class="col-sm-6 col-md-4 col-xs-6">' +
+                '<label for="part-model" class="label-drawing">Category<span class="project-name-sem">:</span></label>' +
+                '</div>'+
+                '<div class="col-sm-6 col-xs-6">' +
+                '<select name="category'+total+'" class="form-control part-model-category" rel="'+count+'" id="part-model">' +
+                '<option>Please Select</option>' +
+                '<option value="Direct Item">Direct Item</option>' +
+                '<option value="Customize">Customize</option>' +
+                '<option value="None count Item">None count Item</option>' +
+                '</select>' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
+                '<div class="col-sm-6 clearfix"></div>' +
+                '</div>' +
+                '</div>'+
+                '<div class="row secoundbar">' +
+                '<div class="col-sm-12" id="process'+count+'">' +
+                '</div>' +
+                '</div>'+
             '<input type="hidden" name="total" value="'+total+'">';
             $('#child-parts').before(addChild);
         });
@@ -610,40 +598,64 @@ foreach($material as $val){
             $('#'+revNo).val(ui.item.rev);
         });
     });
-     var suppliers = [<?php echo $supplier1; ?>];
-            var options = {
-                source: suppliers,
-                minLength: 0
-            };
-            var selector = 'input#supplier1';
-            $(document).on('keydown.autocomplete', selector, function() {
-                $(this).autocomplete(options);
-            });
-            var suppliers = [<?php echo $supplier2; ?>];
-                        var options = {
-                            source: suppliers,
-                            minLength: 0
-                        };
-                        var selector = 'input#supplier2';
-                        $(document).on('keydown.autocomplete', selector, function() {
-                            $(this).autocomplete(options);
-                        });
-                        var suppliers = [<?php echo $supplier3; ?>];
-                                    var options = {
-                                        source: suppliers,
-                                        minLength: 0
-                                    };
-                                    var selector = 'input#supplier3';
-                                    $(document).on('keydown.autocomplete', selector, function() {
-                                        $(this).autocomplete(options);
-                                    });
-                                    var suppliers = [<?php echo $supplier4; ?>];
-                                                var options = {
-                                                    source: suppliers,
-                                                    minLength: 0
-                                                };
-                                                var selector = 'input#supplier4';
-                                                $(document).on('keydown.autocomplete', selector, function() {
-                                                    $(this).autocomplete(options);
-                                                });
+
+        var suppliers = [<?php echo $supplier1; ?>];
+        var options = {
+            source: suppliers,
+            minLength: 0
+        };
+        var selector = 'input#supplier1';
+        $(document).on('keydown.autocomplete', selector, function() {
+            $(this).autocomplete(options);
+        });
+
+        var suppliers = [<?php echo $supplier2; ?>];
+        var options = {
+            source: suppliers,
+            minLength: 0
+        };
+        var selector = 'input#supplier2';
+        $(document).on('keydown.autocomplete', selector, function() {
+            $(this).autocomplete(options);
+        });
+        var suppliers = [<?php echo $supplier3; ?>];
+        var options = {
+            source: suppliers,
+            minLength: 0
+        };
+
+        var selector = 'input#supplier3';
+        $(document).on('keydown.autocomplete', selector, function() {
+            $(this).autocomplete(options);
+        });
+        var suppliers = [<?php echo $supplier4; ?>];
+        var options = {
+            source: suppliers,
+            minLength: 0
+        };
+
+        var selector = 'input#supplier4';
+        $(document).on('keydown.autocomplete', selector, function() {
+            $(this).autocomplete(options);
+        });
+
+        var suppliers = [<?php echo $supplier5; ?>];
+        var options = {
+            source: suppliers,
+            minLength: 0
+        };
+        var selector = 'input#supplier5';
+        $(document).on('keydown.autocomplete', selector, function() {
+            $(this).autocomplete(options);
+        });
+
+        var suppliers = [<?php echo $supplier6; ?>];
+        var options = {
+            source: suppliers,
+            minLength: 0
+        };
+        var selector = 'input#supplier6';
+        $(document).on('keydown.autocomplete', selector, function() {
+            $(this).autocomplete(options);
+        });
 </script>

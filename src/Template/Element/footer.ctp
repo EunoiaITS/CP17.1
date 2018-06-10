@@ -6,8 +6,6 @@
 <script src="<?php echo $this->request->webroot.'assets/js/jQuery.print.js'; ?>"></script>
 <!-- main js -->
 <script src="<?php echo $this->request->webroot.'assets/js/main.js'; ?>"></script>
-<!-- main js -->
-<script src="<?php echo $this->request->webroot.'assets/js/index.js'; ?>"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 

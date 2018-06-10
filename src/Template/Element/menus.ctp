@@ -28,7 +28,7 @@
                 </div>
             </div>
         </li>
-        <li><a href="<?php echo $this->Url->build(['controller'=>'Dashboard','action'=>'index'])?>" class="active">Home (Dashboard)</a></li>
+        <li><a href="<?php echo $this->Url->build(['controller'=>'BOM','action'=>'dashboard'])?>" class="active">Home (Dashboard)</a></li>
         <div class="btn-group-vertical" role="group" class="dropdown">
             <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                 DRAWING &nbsp;

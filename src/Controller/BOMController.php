@@ -113,36 +113,80 @@ class BOMController extends AppController
             $bOM->size = $this->request->getData('size');
             $bOM->quality = $this->request->getData('quality');
             $bOM->category = $this->request->getData('category');
-            $bOM->process1 = $this->request->getData('process1');
-            $bOM->process2 = $this->request->getData('process2');
-            $bOM->process3 = $this->request->getData('process3');
-            $bOM->process4 = $this->request->getData('process4');
-            $bOM->process5 = $this->request->getData('process5');
-            $bOM->process6 = $this->request->getData('process6');
-            $bOM->supplier1 = $this->request->getData('supplier1');
-            $bOM->supplier2 = $this->request->getData('supplier2');
-            $bOM->supplier3 = $this->request->getData('supplier3');
-            $bOM->supplier4 = $this->request->getData('supplier4');
+            $bOM->process1 = $this->request->getData('process1-1');
+            $bOM->process2 = $this->request->getData('process2-1');
+            $bOM->process3 = $this->request->getData('process3-1');
+            $bOM->process4 = $this->request->getData('process4-1');
+            $bOM->process5 = $this->request->getData('process5-1');
+            $bOM->process6 = $this->request->getData('process6-1');
+            $bOM->supplier1 = $this->request->getData('supplier1-1');
+            $bOM->supplier2 = $this->request->getData('supplier2-1');
+            $bOM->supplier3 = $this->request->getData('supplier3-1');
+            $bOM->supplier4 = $this->request->getData('supplier4-1');
+            $bOM->supplier5 = $this->request->getData('supplier5-1');
+            $bOM->supplier6 = $this->request->getData('supplier6-1');
             $bOM->stat = $this->request->getData('stat');
             $bOM->requested_by = $this->request->getData('requested_by');
 
             if ($this->BOM->save($bOM)) {
 
                 $bom_no = $this->BOM->find('all', ['fields' => 'id'])->last();
+                $bom_cat = $this->BOM->find('all', ['fields' => 'category'])->last();
                 if($this->request->getData('total') != null){
                     $bomChild = TableRegistry::get('BOMParts');
                     $bomData = array();
-                    for($i = 1; $i <= $this->request->getData('total'); $i++){
-                        $bomData[$i]['bomId'] = $bom_no['id'];
-                        $bomData[$i]['partNo'] = $this->request->getData('partNo'.$i);
-                        $bomData[$i]['partName'] = $this->request->getData('partName'.$i);
-                        $bomData[$i]['drawingNo'] = $this->request->getData('drawingNo'.$i);
-                        $bomData[$i]['revNo'] = $this->request->getData('revNo'.$i);
-                        $bomData[$i]['material'] = $this->request->getData('material'.$i);
-                        $bomData[$i]['finishing'] = $this->request->getData('finishing'.$i);
-                        $bomData[$i]['common'] = $this->request->getData('common'.$i);
-                        $bomData[$i]['size'] = $this->request->getData('size'.$i);
-                        $bomData[$i]['quality'] = $this->request->getData('quality'.$i);
+                    if($bom_cat == 'Customize'){
+                        for($i = 2; $i <= $this->request->getData('total'); $i++){
+                            $bomData[$i]['bomId'] = $bom_no['id'];
+                            $bomData[$i]['partNo'] = $this->request->getData('partNo'.$i);
+                            $bomData[$i]['partName'] = $this->request->getData('partName'.$i);
+                            $bomData[$i]['drawingNo'] = $this->request->getData('drawingNo'.$i);
+                            $bomData[$i]['revNo'] = $this->request->getData('revNo'.$i);
+                            $bomData[$i]['material'] = $this->request->getData('material'.$i);
+                            $bomData[$i]['finishing'] = $this->request->getData('finishing'.$i);
+                            $bomData[$i]['common'] = $this->request->getData('common'.$i);
+                            $bomData[$i]['size'] = $this->request->getData('size'.$i);
+                            $bomData[$i]['quality'] = $this->request->getData('quality'.$i);
+                            $bomData[$i]['category'] = $this->request->getData('category'.$i);
+                            $bomData[$i]['process1'] = $this->request->getData('process1-'.$i);
+                            $bomData[$i]['process2'] = $this->request->getData('process2-'.$i);
+                            $bomData[$i]['process3'] = $this->request->getData('process3-'.$i);
+                            $bomData[$i]['process4'] = $this->request->getData('process4-'.$i);
+                            $bomData[$i]['process5'] = $this->request->getData('process5-'.$i);
+                            $bomData[$i]['process6'] = $this->request->getData('process6-'.$i);
+                            $bomData[$i]['supplier1'] = $this->request->getData('supplier1-'.$i);
+                            $bomData[$i]['supplier2'] = $this->request->getData('supplier2-'.$i);
+                            $bomData[$i]['supplier3'] = $this->request->getData('supplier3-'.$i);
+                            $bomData[$i]['supplier4'] = $this->request->getData('supplier4-'.$i);
+                            $bomData[$i]['supplier5'] = $this->request->getData('supplier5-'.$i);
+                            $bomData[$i]['supplier6'] = $this->request->getData('supplier6-'.$i);
+                        }
+                    }else{
+                        for($i = 1; $i <= $this->request->getData('total'); $i++){
+                            $bomData[$i]['bomId'] = $bom_no['id'];
+                            $bomData[$i]['partNo'] = $this->request->getData('partNo'.$i);
+                            $bomData[$i]['partName'] = $this->request->getData('partName'.$i);
+                            $bomData[$i]['drawingNo'] = $this->request->getData('drawingNo'.$i);
+                            $bomData[$i]['revNo'] = $this->request->getData('revNo'.$i);
+                            $bomData[$i]['material'] = $this->request->getData('material'.$i);
+                            $bomData[$i]['finishing'] = $this->request->getData('finishing'.$i);
+                            $bomData[$i]['common'] = $this->request->getData('common'.$i);
+                            $bomData[$i]['size'] = $this->request->getData('size'.$i);
+                            $bomData[$i]['quality'] = $this->request->getData('quality'.$i);
+                            $bomData[$i]['category'] = $this->request->getData('category'.$i);
+                            $bomData[$i]['process1'] = $this->request->getData('process1-'.$i);
+                            $bomData[$i]['process2'] = $this->request->getData('process2-'.$i);
+                            $bomData[$i]['process3'] = $this->request->getData('process3-'.$i);
+                            $bomData[$i]['process4'] = $this->request->getData('process4-'.$i);
+                            $bomData[$i]['process5'] = $this->request->getData('process5-'.$i);
+                            $bomData[$i]['process6'] = $this->request->getData('process6-'.$i);
+                            $bomData[$i]['supplier1'] = $this->request->getData('supplier1-'.$i);
+                            $bomData[$i]['supplier2'] = $this->request->getData('supplier2-'.$i);
+                            $bomData[$i]['supplier3'] = $this->request->getData('supplier3-'.$i);
+                            $bomData[$i]['supplier4'] = $this->request->getData('supplier4-'.$i);
+                            $bomData[$i]['supplier5'] = $this->request->getData('supplier5-'.$i);
+                            $bomData[$i]['supplier6'] = $this->request->getData('supplier6-'.$i);
+                        }
                     }
                     $boms = $bomChild->newEntities($bomData);
                     foreach($boms as $bom){
@@ -191,6 +235,8 @@ class BOMController extends AppController
         $this->set('supplier2', $finalResult);
         $this->set('supplier3', $finalResult);
         $this->set('supplier4', $finalResult);
+        $this->set('supplier5', $finalResult);
+        $this->set('supplier6', $finalResult);
         $this->set(compact('bOM'));
         $this->set('_serialize', ['bOM']);
         $this->set('pic', $this->Auth->user('name'));

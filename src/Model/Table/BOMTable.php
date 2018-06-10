@@ -105,30 +105,6 @@ class BOMTable extends Table
 
         $validator
             ->allowEmpty('stat');
-        $validator
-            ->requirePresence('process_1', 'create')
-            ->notEmpty('process_1');
-        $validator
-            ->requirePresence('process_2', 'create')
-            ->notEmpty('process_2');
-        $validator
-            ->requirePresence('process_3', 'create')
-            ->notEmpty('process_3');
-        $validator
-            ->requirePresence('process_4', 'create')
-            ->notEmpty('process_4');
-        $validator
-            ->requirePresence('supplier_1', 'create')
-            ->notEmpty('supplier_1');
-        $validator
-            ->requirePresence('supplier_2', 'create')
-            ->notEmpty('supplier_2');
-        $validator
-            ->requirePresence('supplier_3', 'create')
-            ->notEmpty('supplier_3');
-        $validator
-            ->requirePresence('supplier_4', 'create')
-            ->notEmpty('supplier_4');
 
         $validator
             ->allowEmpty('requested_by');

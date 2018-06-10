@@ -1,5 +1,0 @@
-/vendor/*
-/config/app.php
-/tmp/*
-/logs/*
-**/.idea/workspace.xml **/.idea/tasks.xml
