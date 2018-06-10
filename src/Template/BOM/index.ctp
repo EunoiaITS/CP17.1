@@ -31,6 +31,10 @@
                                                 <th rowspan="3">Supplier 3</th>
                                                 <th rowspan="3">Process 4</th>
                                                 <th rowspan="3">Supplier 4</th>
+                                                <th rowspan="3">Process 5</th>
+                                                <th rowspan="3">Supplier 5</th>
+                                                <th rowspan="3">Process 6</th>
+                                                <th rowspan="3">Supplier 6</th>
                                                 <th rowspan="3">Document</th>
                                               </tr>
                                               <tr class="table-cells">
@@ -63,6 +67,10 @@
                                 <td><?= h($b->supplier3) ?></td>
                                 <td><?= h($b->process4) ?></td>
                                 <td><?= h($b->supplier4) ?></td>
+                                <td><?php if(isset($b->process5)){ echo $b->process5;} ?></td>
+                                <td><?php if(isset($b->supplier5)){ echo $b->supplier5;} ?></td>
+                                <td><?php if(isset($b->process6)){ echo $b->process6;} ?></td>
+                                <td><?php if(isset($b->supplier6)){ echo $b->supplier6;} ?></td>
                                 <td><a href="<?php echo $this->Url->build(['controller' => 'BOM', 'action' => 'view', $b->id]); ?>"><span class="btn btn-primary"> VIEW </span></a></td>
                             </tr>
                             <?php if(isset($b->childParts)){ foreach($b->childParts as $bp): ?>
@@ -79,14 +87,18 @@
                                     <td><?php $type= $bp->finishing;$mtype = preg_split('/[(]+/',$type);print_r($mtype[0]); ?></td>
                                     <td><?php $code= $bp->finishing;$bcode = preg_split('/[)(]+/',$code);print_r($bcode[1]); ?></td>
                                     <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <td><?php if(isset($b->process1)){ echo $b->process1;} ?></td>
+                                    <td><?php if(isset($b->supplier1)){ echo $b->supplier1;} ?></td>
+                                    <td><?php if(isset($b->process2)){ echo $b->process2;} ?></td>
+                                    <td><?php if(isset($b->supplier2)){ echo $b->supplier2;} ?></td>
+                                    <td><?php if(isset($b->process3)){ echo $b->process3;} ?></td>
+                                    <td><?php if(isset($b->supplier3)){ echo $b->supplier3;} ?></td>
+                                    <td><?php if(isset($b->process4)){ echo $b->process4;} ?></td>
+                                    <td><?php if(isset($b->supplier4)){ echo $b->supplier4;} ?></td>
+                                    <td><?php if(isset($b->process5)){ echo $b->process5;} ?></td>
+                                    <td><?php if(isset($b->supplier5)){ echo $b->supplier5;} ?></td>
+                                    <td><?php if(isset($b->process6)){ echo $b->process6;} ?></td>
+                                    <td><?php if(isset($b->supplier6)){ echo $b->supplier6;} ?></td>
                                     <td></td>
                                 </tr>
                             <?php endforeach; }?>

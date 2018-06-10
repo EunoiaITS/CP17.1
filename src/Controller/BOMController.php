@@ -131,7 +131,6 @@ class BOMController extends AppController
             if ($this->BOM->save($bOM)) {
 
                 $bom_no = $this->BOM->find('all', ['fields' => 'id'])->last();
-                $bom_cat = $this->BOM->find('all', ['fields' => 'category'])->last();
                 if($this->request->getData('total') != null){
                     $bomChild = TableRegistry::get('BOMParts');
                     $bomData = array();
@@ -146,7 +145,6 @@ class BOMController extends AppController
                             $bomData[$i]['common'] = $this->request->getData('common'.$i);
                             $bomData[$i]['size'] = $this->request->getData('size'.$i);
                             $bomData[$i]['quality'] = $this->request->getData('quality'.$i);
-                            $bomData[$i]['category'] = $this->request->getData('category'.$i);
                             $bomData[$i]['process1'] = $this->request->getData('process1-'.$i);
                             $bomData[$i]['process2'] = $this->request->getData('process2-'.$i);
                             $bomData[$i]['process3'] = $this->request->getData('process3-'.$i);
