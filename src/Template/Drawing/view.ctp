@@ -61,7 +61,6 @@
                         <th>Drawing No</th>
                         <th>Drawing Name</th>
                         <th>Document</th>
-                        <th>Actions</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -70,11 +69,6 @@
                         <td><?= h($drawing->drawingNo) ?></td>
                         <td><?= h($drawing->drawingName) ?></td>
                         <td><a href=""><?= h($drawing->drawingNo) ?></a></td>
-                        <td>
-                            <ul>
-                                <li><a href="<?php echo $this->Url->build(['controller' => 'Drawing', 'action' => 'editRequests', $drawing->id]); ?>"><span class="btn btn-primary">Edit</span></a></li>
-                            </ul>
-                        </td>
                     </tr>
                     <?php $i=2; foreach($childDrawing as $cd): ?>
                         <tr>
@@ -82,11 +76,6 @@
                             <td><?php echo $cd->drawingNo; ?></td>
                             <td><?php echo $cd->drawingName; ?></td>
                             <td><a href=""><?php echo $cd->drawingNo; ?></a></td>
-                            <td>
-                                <ul>
-                                    <li><a href="<?php echo $this->Url->build(['controller' => 'Drawing', 'action' => 'editRequests', $drawing->id]); ?>"><span class="btn btn-primary">Edit</span></a></li>
-                                </ul>
-                            </td>
                         </tr>
                     <?php endforeach; ?>
                     </tbody>
