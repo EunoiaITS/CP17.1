@@ -143,7 +143,7 @@
                                         <label for="parts-size-matarial" class="label-drawing">Size <span class="project-name-sem">:</span></label>
                                     </div>
                                     <div class="col-sm-6 col-xs-6">
-                                        <input name="size" type="text" id="parts-size-matarial" placeholder="Part No" class="form-control"/>
+                                        <input name="size" type="text" id="parts-size-matarial" class="form-control"/>
                                     </div>
                                 </div>
                             </div>
@@ -204,6 +204,7 @@
                         <button type="button" id="add-childs" class="btn btn-info btn-genarate-white text-uppercase">Add Child Part</button>
                     </div>
                     <input type="hidden" name="stat" value="pending">
+                    <input id="pm_id" type="hidden" name="pm_id" value="">
                     <input type="hidden" name="requested_by" value="<?php echo $pic; ?>">
                 </form>
             </div>
@@ -500,7 +501,7 @@ foreach($material as $val){
             '<label for="parts-size-matarial" class="label-drawing">Size <span class="project-name-sem">:</span></label>'+
             '</div>'+
             '<div class="col-sm-6 col-xs-6">'+
-            '<input name="size'+total+'" type="text" id="parts-size-matarial" placeholder="Part No" class="form-control"/>'+
+            '<input name="size'+total+'" type="text" id="parts-size-matarial" class="form-control"/>'+
             '</div>'+
             '</div>'+
             '</div>'+
@@ -569,6 +570,7 @@ foreach($material as $val){
         $(document).on('autocompleteselect', part_no, function(e, ui) {
             targetName = $(this).attr('rel');
             $('#'+targetName).val(ui.item.idx);
+            $('#pm_id').val(ui.item.pmId);
         });
         var data_name = [<?php echo $part_name; ?>];
         var options_name = {
@@ -582,6 +584,7 @@ foreach($material as $val){
         $(document).on('autocompleteselect', part_name, function(e, ui) {
             targetNo = $(this).attr('rel');
             $('#'+targetNo).val(ui.item.idx);
+            $('#pm_id').val(ui.item.pmId);
         });
         var draw_name = 'input.draw-sug';
         var data_draw = [<?php echo $drawing_no; ?>];
@@ -596,6 +599,7 @@ foreach($material as $val){
         $(document).on('autocompleteselect', draw_name, function(e, ui) {
             revNo = $(this).attr('rel');
             $('#'+revNo).val(ui.item.rev);
+            $('#pm_id').val(ui.item.pmId);
         });
     });
 

@@ -86,8 +86,8 @@ class BOMController extends AppController
         $partMasterList = $this->paginate($this->PartMasterList);
         $part_no = $part_name = null;
         foreach($partMasterList as $pm){
-            $part_no .= '{label:"'.$pm->partNo.'",idx:"'.$pm->partName.'"},';
-            $part_name .= '{label:"'.$pm->partName.'",idx:"'.$pm->partNo.'"},';
+            $part_no .= '{label:"'.$pm->partNo.'",idx:"'.$pm->partName.'",pmId:"'.$pm->id.'"},';
+            $part_name .= '{label:"'.$pm->partName.'",idx:"'.$pm->partNo.'",pmId:"'.$pm->id.'"},';
         }
         $part_no = rtrim($part_no, ',');
         $part_name = rtrim($part_name, ',');
@@ -100,6 +100,7 @@ class BOMController extends AppController
         $drawing_no = rtrim($drawing_no, ',');
         $bOM = $this->BOM->newEntity();
         if ($this->request->is('post')) {
+            $bOM->pm_id = $this->request->getData('pm_id');
             $bOM->projectName = $this->request->getData('projectName');
             $bOM->model = $this->request->getData('model');
             $bOM->version = $this->request->getData('version');

@@ -3,7 +3,7 @@ namespace App\Controller;
 
 use App\Controller\AppController;
 use Cake\Event\Event;
-
+use Cake\Routing\Router;
 /**
  * Api Controller
  *
@@ -18,15 +18,6 @@ class ApiController extends AppController
         $this->autoRender = false;
         $this->loadModel('PartMasterList');
         $parts = $this->PartMasterList->find('all');
-        echo json_encode($parts, JSON_PRETTY_PRINT);
-        die();
-    }
-    
-    public function allPartsId($id = null){
-        $this->autoRender = false;
-        $this->loadModel('PartMasterList');
-        $parts = $this->PartMasterList->find('all')
-        ->Where(['id'=>$id]);
         echo json_encode($parts, JSON_PRETTY_PRINT);
         die();
     }
@@ -50,10 +41,17 @@ class ApiController extends AppController
         $this->autoRender = false;
         $this->loadModel('BOM');
         $this->loadModel('BOMParts');
+        $this->loadModel('PartMasterList');
         $parts = $this->BOM->get($id, [
                 'contain' => []
-            ]);
+        ]);
         $relParts = $this->BOMParts->find('all')->where(['bomId' => $id]);
+        
+        $pm = $this->PartMasterList->get($parts->pm_id, [
+                'contain' => []
+        ]);
+        $parts->pm = $pm;
+        $parts->sitelink = Router::url('/', true);
         $parts->relParts = $relParts;
         echo json_encode($parts,JSON_PRETTY_PRINT);
         die();
