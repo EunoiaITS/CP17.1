@@ -32,7 +32,7 @@ class IPIController extends AppController
     public function index()
     {
         $this->loadModel('PrepareIpi');
-        $iPI = $this->paginate($this->PrepareIpi->find()
+        $iPI = $this->paginate($this->PrepareIpi->find('all',['order'=>['PrepareIpi.id'=>'desc']])
         ->where(['stat' => 'confirmed']));
 
         $this->set(compact('iPI'));

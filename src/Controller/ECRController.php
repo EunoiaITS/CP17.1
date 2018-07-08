@@ -30,7 +30,8 @@ class ECRController extends AppController
      */
     public function index()
     {
-        $eCR = $this->paginate($this->ECR->find()->where(['stat' => 'approved']));
+        $eCR = $this->paginate($this->ECR->find('all',['order'=>['ECR.id'=>'desc']])
+            ->where(['stat' => 'approved']));
         $this->set(compact('eCR'));
         $this->set('_serialize', ['eCR']);
     }

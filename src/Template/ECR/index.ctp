@@ -24,9 +24,9 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <?php foreach($eCR as $e): ?>
+                        <?php $count=0; foreach($eCR as $e): $count++;?>
                             <tr>
-                                <td><?= h($e->id) ?></td>
+                                <td><?= $count ?></td>
                                 <td><a href="#"><?= h($e->id) ?></a></td>
                                 <td><?= h($e->created) ?></td>
                                 <td><?= h($e->requestorName) ?></td>

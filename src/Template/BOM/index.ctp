@@ -45,9 +45,9 @@
                                               </tr>
                                             </thead>
                         <tbody>
-                        <?php foreach($bOM as $b): ?>
+                        <?php $count=0; foreach($bOM as $b): $count++;?>
                             <tr>
-                                <td><?= h($b->id) ?></td>
+                                <td><?= $count ?></td>
                                 <td><?= h($b->partName) ?></td>
                                 <td><?= h($b->drawingNo) ?></td>
                                 <td><?= h($b->revNo) ?></td>

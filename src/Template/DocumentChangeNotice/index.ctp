@@ -24,12 +24,9 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <?php
-                        $i = 1;
-                        foreach ($documentChangeNotice as $singleDocumentChangeNotice) {
-                        ?>
+                        <?php $count=0;foreach ($documentChangeNotice as $singleDocumentChangeNotice): $count++;?>
                         <tr>
-                            <td><?= $i?></td>
+                            <td><?= $count ?></td>
                             <td><?=$singleDocumentChangeNotice->requester?></td>
                             <td><?=$singleDocumentChangeNotice->dateRequested?></td>
                             <td><?=$singleDocumentChangeNotice->docTitle?></td>
@@ -38,9 +35,7 @@
                             <td><?=$singleDocumentChangeNotice->dcnNo?></td>
                             <td><a href="<?php echo $this->Url->build(['controller' => 'DocumentChangeNotice', 'action' => 'view',$singleDocumentChangeNotice->id]); ?>"><span class="btn btn-primary"> VIEW </span></a></td>
                         </tr>
-                            <?php
-                            $i++;
-                        } ?>
+                        <?php endforeach;?>
 
                         </tbody>
                     </table>

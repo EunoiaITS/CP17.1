@@ -1,12 +1,6 @@
 <!--=========
       Drawing Notification page
       ==============-->
-<?php
-//echo'<pre>';
-//print_r($purchaseRequisition);
-//exit();
-
-?>
 
 <div class="drawing-from">
     <div class="container">
@@ -35,12 +29,9 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <?php
-                        $i = 1;
-                        foreach ($purchaseRequisition as $singlePurchaseRequisition) {
-                        ?>
+                        <?php $count = 0; foreach ($purchaseRequisition as $singlePurchaseRequisition): $count++;?>
                         <tr>
-                            <td><?= $i;?></td>
+                            <td><?= $count;?></td>
                             <td><?= $singlePurchaseRequisition->prNo;?></td>
                             <td><?= $singlePurchaseRequisition->prDate;?></td>
                             <td><?= $singlePurchaseRequisition->projectName;?></td>
@@ -52,9 +43,7 @@
                             <td></td>
                             <td><a href="<?php echo $this->Url->build(['controller' => 'PurchaseRequisition', 'action' => 'view',$singlePurchaseRequisition->id]); ?>"><span class="btn btn-primary"> VIEW </span></a></td>
                         </tr>
-                            <?php
-                            $i++;
-                        } ?>
+                        <?php endforeach;?>
                         </tbody>
                     </table>
                 </div>

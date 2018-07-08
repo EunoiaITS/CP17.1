@@ -33,7 +33,7 @@ class DocumentChangeNoticeController extends AppController
      */
     public function index()
     {
-        $documentChangeNotice = $this->paginate($this->DocumentChangeNotice);
+        $documentChangeNotice = $this->paginate($this->DocumentChangeNotice->find('all',['order'=>['DocumentChangeNotice.id'=>'desc']]));
 
         $this->set(compact('documentChangeNotice'));
         $this->set('_serialize', ['documentChangeNotice']);

@@ -21,12 +21,9 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <?php
-                        $i = 1;
-                        foreach ($partApproval as $singlePartApproval) {
-                            ?>
+                        <?php $count=0;foreach ($partApproval as $singlePartApproval): $count++;?>
                             <tr>
-                                <td><?= $i ?></td>
+                                <td><?= $count ?></td>
                                 <td><?=$singlePartApproval->drawingNo?></td>
                                 <td><?=$singlePartApproval->requestor?></td>
                                 <td><?=$singlePartApproval->date?></td>
@@ -36,8 +33,7 @@
                                 <td><?=$singlePartApproval->remarks?></td>
                                 <td><a href="<?php echo $this->Url->build(['controller' => 'PartApproval', 'action' => 'view',$singlePartApproval->id]); ?>"><span class="btn btn-primary"> VIEW </span></a></td>
                             </tr>
-                            <?php $i++;
-                        } ?>
+                            <?php endforeach;?>
                         </tbody>
                     </table>
                 </div>

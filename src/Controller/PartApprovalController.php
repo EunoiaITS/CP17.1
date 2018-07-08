@@ -32,7 +32,7 @@ class PartApprovalController extends AppController
      */
     public function index()
     {
-        $partApproval = $this->paginate($this->PartApproval->find('all')
+        $partApproval = $this->paginate($this->PartApproval->find('all',['order'=>['PartApproval.id'=>'desc']])
         ->where(['status' => 'approved']));
 
         $this->set(compact('partApproval'));

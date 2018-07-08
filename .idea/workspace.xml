@@ -2,16 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c15d33d-ffe2-4790-baea-faf225c3f8b5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/engmodule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/engmodule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/Migrations/schema-dump-default.lock" beforeDir="false" afterPath="$PROJECT_DIR$/config/Migrations/schema-dump-default.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/PartMasterListController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PartMasterListController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Table/PartMasterListTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Table/PartMasterListTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/Element/menus.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Element/menus.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/PartMasterList/add.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/PartMasterList/add.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/PartMasterList/index.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/PartMasterList/index.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BOMController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BOMController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/DocumentChangeNoticeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DocumentChangeNoticeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/DrawingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DrawingController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ECRController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ECRController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/IPIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/IPIController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PartApprovalController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PartApprovalController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PurchaseRequisitionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PurchaseRequisitionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/BOM/index.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/BOM/index.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/DocumentChangeNotice/index.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/DocumentChangeNotice/index.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Drawing/index.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Drawing/index.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/ECR/index.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/ECR/index.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/IPI/index.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/IPI/index.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/PartApproval/index.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/PartApproval/index.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/PurchaseRequisition/index.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/PurchaseRequisition/index.ctp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/ajgl/breakpoint-twig-extension/" />
     <ignored path="$PROJECT_DIR$/vendor/aptoma/twig-markdown/" />
@@ -37,29 +41,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="add.ctp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Template/PartMasterList/add.ctp">
+      <file leaf-file-name="IPIController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/IPIController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="273" column="42" selection-start-line="273" selection-start-column="42" selection-end-line="273" selection-end-column="42" />
+            <state relative-caret-position="252">
+              <caret line="34" column="84" selection-start-line="34" selection-start-column="84" selection-end-line="34" selection-end-column="84" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.ctp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Template/PartMasterList/index.ctp">
+        <entry file="file://$PROJECT_DIR$/src/Template/IPI/index.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+            <state relative-caret-position="84">
+              <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PartMasterListController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Controller/PartMasterListController.php">
+      <file leaf-file-name="PartApprovalController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/PartApprovalController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="222" column="17" selection-start-line="222" selection-start-column="17" selection-end-line="222" selection-end-column="17" />
+            <state relative-caret-position="112">
+              <caret line="34" column="107" selection-start-line="34" selection-start-column="107" selection-end-line="34" selection-end-column="107" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.ctp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Template/PartApproval/index.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="28">
+              <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -84,6 +97,20 @@
         <option value="$PROJECT_DIR$/src/Template/PartMasterList/add.ctp" />
         <option value="$PROJECT_DIR$/src/Template/PartMasterList/index.ctp" />
         <option value="$PROJECT_DIR$/src/Controller/PartMasterListController.php" />
+        <option value="$PROJECT_DIR$/src/Template/Drawing/index.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/BOM/index.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/PurchaseRequisition/index.ctp" />
+        <option value="$PROJECT_DIR$/src/Controller/ECRController.php" />
+        <option value="$PROJECT_DIR$/src/Template/ECR/index.ctp" />
+        <option value="$PROJECT_DIR$/src/Controller/BOMController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/DrawingController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/PurchaseRequisitionController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/DocumentChangeNoticeController.php" />
+        <option value="$PROJECT_DIR$/src/Template/DocumentChangeNotice/index.ctp" />
+        <option value="$PROJECT_DIR$/src/Controller/IPIController.php" />
+        <option value="$PROJECT_DIR$/src/Template/IPI/index.ctp" />
+        <option value="$PROJECT_DIR$/src/Controller/PartApprovalController.php" />
+        <option value="$PROJECT_DIR$/src/Template/PartApproval/index.ctp" />
       </list>
     </option>
   </component>
@@ -176,19 +203,6 @@
               <item name="engmodule" type="b2602c69:ProjectViewProjectNode" />
               <item name="CP17.1" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="engmodule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CP17.1" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Table" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="engmodule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CP17.1" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Template" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -196,7 +210,7 @@
               <item name="CP17.1" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Template" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="PartMasterList" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="PartApproval" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -232,12 +246,12 @@
       <updated>1530791373064</updated>
       <workItem from="1530791375274" duration="1660000" />
       <workItem from="1530937897400" duration="11839000" />
-      <workItem from="1531023920675" duration="5245000" />
+      <workItem from="1531023920675" duration="7919000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18744000" />
+    <option name="totallyTimeSpent" value="21418000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -305,11 +319,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/Migrations/20180707081516_RemoveDataFromPartMasterList.php" />
-    <entry file="file://$PROJECT_DIR$/src/Controller/BOMController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3444" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58">
@@ -331,24 +340,127 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/PartMasterList/add.ctp">
+    <entry file="file://$PROJECT_DIR$/src/Controller/PartMasterListController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="273" column="42" selection-start-line="273" selection-start-column="42" selection-end-line="273" selection-end-column="42" />
+        <state relative-caret-position="366">
+          <caret line="222" column="17" selection-start-line="222" selection-start-column="17" selection-end-line="222" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Template/PartMasterList/index.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+        <state relative-caret-position="168">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/PartMasterListController.php">
+    <entry file="file://$PROJECT_DIR$/src/Template/PartMasterList/add.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="222" column="17" selection-start-line="222" selection-start-column="17" selection-end-line="222" selection-end-column="17" />
+        <state relative-caret-position="212">
+          <caret line="269" column="29" selection-end-line="302" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Drawing/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Drawing/add.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2184" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/BOM/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="49" column="46" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/PurchaseRequisition/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/ECR/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ECRController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/PurchaseRequisitionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="36" column="123" selection-start-line="36" selection-start-column="123" selection-end-line="36" selection-end-column="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/DrawingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="33" column="95" selection-start-line="33" selection-start-column="95" selection-end-line="33" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/BOMController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="33" column="74" selection-start-line="33" selection-start-column="74" selection-end-line="33" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/DocumentChangeNotice/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/DocumentChangeNoticeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="35" column="131" selection-start-line="35" selection-start-column="131" selection-end-line="35" selection-end-column="131" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/IPIController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="34" column="84" selection-start-line="34" selection-start-column="84" selection-end-line="34" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/IPI/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/PartApprovalController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="34" column="107" selection-start-line="34" selection-start-column="107" selection-end-line="34" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/PartApproval/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
         </state>
       </provider>
     </entry>

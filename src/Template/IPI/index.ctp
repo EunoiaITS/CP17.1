@@ -23,9 +23,9 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <?php foreach($iPI as $iPI): ?>
+                        <?php $count=0; foreach($iPI as $iPI): $count++;?>
                             <tr>
-                                <td><?= h($iPI->id) ?></td>
+                                <td><?= $count ?></td>
                                 <td><a href="#"><?= h($iPI->drawingNo) ?></a></td>
                                 <td><?php echo date('Y-m-d', strtotime($iPI->created)); ?></td>
                                 <td><?= h($iPI->supplier) ?></td>

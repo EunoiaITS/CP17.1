@@ -23,9 +23,9 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <?php foreach($drawing as $dr): ?>
+                        <?php $count=0; foreach($drawing as $dr): $count++;?>
                             <tr>
-                                <td><?= h($dr->id) ?></td>
+                                <td><?= $count ?></td>
                                 <td><?= h($dr->projectName) ?></td>
                                 <td><?= h($dr->drawnBy) ?></td>
                                 <td><?= h($dr->created) ?></td>

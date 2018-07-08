@@ -31,7 +31,7 @@ class DrawingController extends AppController
      */
     public function index()
     {
-        $drawing = $this->paginate($this->Drawing->find('all')
+        $drawing = $this->paginate($this->Drawing->find('all',['order'=>['Drawing.id'=>'desc']])
         ->where(['stat' => 'approved']));
 
         $this->set(compact('drawing'));

@@ -23,9 +23,6 @@ class BOMController extends AppController
         parent::initialize();
         $this->viewBuilder()->setLayout('mainframe');
     }
-    public function dashboard(){
-
-    }
 
     /**
      * Index method
@@ -34,7 +31,7 @@ class BOMController extends AppController
      */
     public function index()
     {
-        $bOM = $this->paginate($this->BOM);
+        $bOM = $this->paginate($this->BOM->find('all',['order'=>['BOM.id'=>'desc']]));
         $this->set('_serialize', ['bOM']);
         $this->set(compact('bOM'));
         $this->loadModel('BOMParts');

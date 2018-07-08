@@ -34,7 +34,7 @@ class PurchaseRequisitionController extends AppController
      */
     public function index()
     {
-        $purchaseRequisition = $this->paginate($this->PurchaseRequisition->find('all')
+        $purchaseRequisition = $this->paginate($this->PurchaseRequisition->find('all',['order'=>['PurchaseRequisition.id'=>'desc']])
         ->where(['status' => 'approved']));
 
         $this->set(compact('purchaseRequisition'));
