@@ -71,35 +71,6 @@ class PartMasterListTable extends Table
             ->requirePresence('drawingNo', 'create')
             ->notEmpty('drawingNo');
 
-        $validator
-            ->requirePresence('section', 'create')
-            ->notEmpty('section');
-
-        $validator
-            ->integer('zzt')
-            ->requirePresence('zzt', 'create')
-            ->notEmpty('zzt');
-
-        $validator
-            ->integer('zzz')
-            ->requirePresence('zzz', 'create')
-            ->notEmpty('zzz');
-
-        $validator
-            ->integer('zztt')
-            ->requirePresence('zztt', 'create')
-            ->notEmpty('zztt');
-
-        $validator
-            ->integer('zzzt')
-            ->requirePresence('zzzt', 'create')
-            ->notEmpty('zzzt');
-
-        $validator
-            ->integer('zzztt')
-            ->requirePresence('zzztt', 'create')
-            ->notEmpty('zzztt');
-
         return $validator;
     }
 }

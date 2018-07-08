@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Controller;
-
 /**
  * PartMasterList Controller
  *
@@ -63,8 +62,166 @@ class PartMasterListController extends AppController
         $partMasterList = $this->PartMasterList->newEntity();
         if ($this->request->is('post')) {
             $partMasterList = $this->PartMasterList->patchEntity($partMasterList, $this->request->getData());
-
             if ($this->PartMasterList->save($partMasterList)) {
+                $this->loadModel('PmlData');
+                $pml_id = $this->PartMasterList->find('all', ['fields' => 'id'])->last();
+                    if($this->request->getData('zzz') != ''){
+                        $pml_data = $this->PmlData->newEntity();
+                        $pml_data->pml_id = $pml_id['id'];
+                        $pml_data->key = 'zzz';
+                        $pml_data->value = $this->request->getData('zzz');
+                        $this->PmlData->save($pml_data);
+                    }
+                    if($this->request->getData('zzt') != ''){
+                        $pml_data = $this->PmlData->newEntity();
+                        $pml_data->pml_id = $pml_id['id'];
+                        $pml_data->key = 'zzt';
+                        $pml_data->value = $this->request->getData('zzt');
+                        $this->PmlData->save($pml_data);
+                    }
+                    if($this->request->getData('zztt') != ''){
+                        $pml_data = $this->PmlData->newEntity();
+                        $pml_data->pml_id = $pml_id['id'];
+                        $pml_data->key = 'zztt';
+                        $pml_data->value = $this->request->getData('zztt');
+                        $this->PmlData->save($pml_data);
+                    }
+                    if($this->request->getData('zzztt') != ''){
+                        $pml_data = $this->PmlData->newEntity();
+                        $pml_data->pml_id = $pml_id['id'];
+                        $pml_data->key = 'zzztt';
+                        $pml_data->value = $this->request->getData('zzztt');
+                        $this->PmlData->save($pml_data);
+                    }
+                    if($this->request->getData('zzzt') != ''){
+                        $pml_data = $this->PmlData->newEntity();
+                        $pml_data->pml_id = $pml_id['id'];
+                        $pml_data->key = 'zzzt';
+                        $pml_data->value = $this->request->getData('zzzt');
+                        $this->PmlData->save($pml_data);
+                    }
+
+
+
+                if($this->request->getData('rc_101') != ''){
+                    $pml_data = $this->PmlData->newEntity();
+                    $pml_data->pml_id = $pml_id['id'];
+                    $pml_data->key = 'rc_101';
+                    $pml_data->value = $this->request->getData('rc_101');
+                    $this->PmlData->save($pml_data);
+                }
+                if($this->request->getData('rc_102') != ''){
+                    $pml_data = $this->PmlData->newEntity();
+                    $pml_data->pml_id = $pml_id['id'];
+                    $pml_data->key = 'rc_102';
+                    $pml_data->value = $this->request->getData('rc_102');
+                    $this->PmlData->save($pml_data);
+                }
+                if($this->request->getData('rc_111') != ''){
+                    $pml_data = $this->PmlData->newEntity();
+                    $pml_data->pml_id = $pml_id['id'];
+                    $pml_data->key = 'rc_111';
+                    $pml_data->value = $this->request->getData('rc_111');
+                    $this->PmlData->save($pml_data);
+                }
+                if($this->request->getData('rc_112') != ''){
+                    $pml_data = $this->PmlData->newEntity();
+                    $pml_data->pml_id = $pml_id['id'];
+                    $pml_data->key = 'rc_112';
+                    $pml_data->value = $this->request->getData('rc_112');
+                    $this->PmlData->save($pml_data);
+                }
+                if($this->request->getData('rc_121') != ''){
+                    $pml_data = $this->PmlData->newEntity();
+                    $pml_data->pml_id = $pml_id['id'];
+                    $pml_data->key = 'rc_121';
+                    $pml_data->value = $this->request->getData('rc_121');
+                    $this->PmlData->save($pml_data);
+                }
+                if($this->request->getData('rc_122') != ''){
+                    $pml_data = $this->PmlData->newEntity();
+                    $pml_data->pml_id = $pml_id['id'];
+                    $pml_data->key = 'rc_122';
+                    $pml_data->value = $this->request->getData('rc_122');
+                    $this->PmlData->save($pml_data);
+                }
+
+
+
+                if($this->request->getData('z') != ''){
+                    $pml_data = $this->PmlData->newEntity();
+                    $pml_data->pml_id = $pml_id['id'];
+                    $pml_data->key = 'z';
+                    $pml_data->value = $this->request->getData('z');
+                    $this->PmlData->save($pml_data);
+                }
+                if($this->request->getData('b') != ''){
+                    $pml_data = $this->PmlData->newEntity();
+                    $pml_data->pml_id = $pml_id['id'];
+                    $pml_data->key = 'b';
+                    $pml_data->value = $this->request->getData('b');
+                    $this->PmlData->save($pml_data);
+                }
+                if($this->request->getData('zz') != ''){
+                    $pml_data = $this->PmlData->newEntity();
+                    $pml_data->pml_id = $pml_id['id'];
+                    $pml_data->key = 'zz';
+                    $pml_data->value = $this->request->getData('zz');
+                    $this->PmlData->save($pml_data);
+                }
+                if($this->request->getData('zzb') != ''){
+                    $pml_data = $this->PmlData->newEntity();
+                    $pml_data->pml_id = $pml_id['id'];
+                    $pml_data->key = 'zzb';
+                    $pml_data->value = $this->request->getData('zzb');
+                    $this->PmlData->save($pml_data);
+                }
+                if($this->request->getData('zzbb') != ''){
+                    $pml_data = $this->PmlData->newEntity();
+                    $pml_data->pml_id = $pml_id['id'];
+                    $pml_data->key = 'zzbb';
+                    $pml_data->value = $this->request->getData('zzbb');
+                    $this->PmlData->save($pml_data);
+                }
+                if($this->request->getData('zzzb') != ''){
+                    $pml_data = $this->PmlData->newEntity();
+                    $pml_data->pml_id = $pml_id['id'];
+                    $pml_data->key = 'zzzb';
+                    $pml_data->value = $this->request->getData('zzzb');
+                    $this->PmlData->save($pml_data);
+                }
+
+
+                if($this->request->getData('kva_500') != ''){
+                    $pml_data = $this->PmlData->newEntity();
+                    $pml_data->pml_id = $pml_id['id'];
+                    $pml_data->key = 'kva_500';
+                    $pml_data->value = $this->request->getData('kva_500');
+                    $this->PmlData->save($pml_data);
+                }
+                if($this->request->getData('kva_1000') != ''){
+                    $pml_data = $this->PmlData->newEntity();
+                    $pml_data->pml_id = $pml_id['id'];
+                    $pml_data->key = 'kva_1000';
+                    $pml_data->value = $this->request->getData('kva_1000');
+                    $this->PmlData->save($pml_data);
+                }
+
+                if($this->request->getData('dt_1600') != ''){
+                    $pml_data = $this->PmlData->newEntity();
+                    $pml_data->pml_id = $pml_id['id'];
+                    $pml_data->key = 'dt_1600';
+                    $pml_data->value = $this->request->getData('dt_1600');
+                    $this->PmlData->save($pml_data);
+                }
+                if($this->request->getData('slfp') != ''){
+                    $pml_data = $this->PmlData->newEntity();
+                    $pml_data->pml_id = $pml_id['id'];
+                    $pml_data->key = 'slfp';
+                    $pml_data->value = $this->request->getData('slfp');
+                    $this->PmlData->save($pml_data);
+                }
+
                 if ($this->request->getData('picture') != '') {
                     $fileName = $this->request->getData('picture');
                     $part_no = $this->PartMasterList->find('all', ['fields' => 'id'])->last();
@@ -77,8 +234,6 @@ class PartMasterListController extends AppController
                         mkdir($uploadPath);
                     }
                     $uploadFile = $uploadPath.$imageFileName;
-                    //$this->request->getData('uploadedFile') = $uploadFile;
-                    //print_r($fileName);
                     if (move_uploaded_file($fileName['tmp_name'], $uploadFile)) {
                         $imageFile = 'uploads/parts/'.$part_no['id'].'/'.$imageFileName;
                         $partMasterList_this = $this->PartMasterList->find()

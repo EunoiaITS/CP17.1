@@ -13,7 +13,7 @@
             </div>
             <div class="col-sm-9 padding-zero">
                 <div class="user-details text-uppercase">
-                    <div class="user-name  ">
+                    <div class="user-name ">
                         <span class="user-label"><b>User ID</b> :</span>
                         <span class="user-label-no"><?php echo $userId; ?></span>
                     </div>
