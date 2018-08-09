@@ -16,7 +16,7 @@
                             <th>NO.</th>
                             <th>ECR No</th>
                             <th>Issue Date</th>
-                            <th>Requestor</th>
+                            <th>Requester</th>
                             <th>Model</th>
                             <th>Status</th>
                             <th>Remarks</th>

@@ -12,7 +12,7 @@
                             <th>NO.</th>
                             <th>Drawing No</th>
                             <th>Requested Date</th>
-                            <th>Requestor</th>
+                            <th>Requester</th>
                             <th>Respond Days</th>
                             <th>Remarks</th>
                             <th>Actions</th>

@@ -19,7 +19,7 @@
                                                 <th rowspan="3">Rev</th>
                                                 <th rowspan="3">CN</th>
                                                 <th rowspan="3">Dimension</th>
-                                                <th rowspan="3">Qty</th>
+                                                <th rowspan="3">Quantity</th>
                                                 <th colspan="2">Material</th>
                                                 <th colspan="2">Finishing</th>
                                                 <th rowspan="3">Category</th>

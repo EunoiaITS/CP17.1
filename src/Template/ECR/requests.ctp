@@ -16,7 +16,7 @@
                             <th>NO.</th>
                             <th>ECR/PCR No</th>
                             <th>Model</th>
-                            <th>Requestor</th>
+                            <th>Requester</th>
                             <th>Remarks</th>
                             <th>Actions</th>
                         </tr>

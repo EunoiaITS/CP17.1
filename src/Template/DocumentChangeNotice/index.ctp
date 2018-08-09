@@ -14,7 +14,7 @@
                         <thead>
                         <tr>
                             <th>No.</th>
-                            <th>Requestor</th>
+                            <th>Requester</th>
                             <th>Issue Date</th>
                             <th>Document Title</th>
                             <th>Status</th>

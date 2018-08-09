@@ -15,7 +15,7 @@ Drawing Notification page
                             <th>NO.</th>
                             <th>Doc. Title</th>
                             <th>Issue Date</th>
-                            <th>Requestor</th>
+                            <th>Requester</th>
                             <th>Remarks</th>
                             <th>Actions</th>
                         </tr>

@@ -1,6 +1,10 @@
 <div class="drawing-table table-responsive clearfix">
     <div class="row">
         <div class="col-sm-12">
+            <!--<div class="pull-right">
+                <button class="btn btn-info-view text-uppercase">cancel</button>
+                <button class="btn btn-info btn-genarate text-uppercase">save</button>
+            </div>-->
             <table class="table table-bordered">
                 <thead>
                 <tr>
@@ -9,6 +13,7 @@
                     <th>Part Name</th>
                     <th>Picture</th>
                     <th>Drawing No</th>
+                    <th>Section</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -20,8 +25,9 @@
                         <td><?= $i; ?></td>
                         <td><?= $singleMasterList->partNo; ?></td>
                         <td><?= $singleMasterList->partName; ?></td>
-                        <td><img class="img-responsive" src="<?php echo $this->request->webroot.$singleMasterList->picture; ?>"/></td>
+                        <td><img class="img-responsive" style="height:150px;width:200px;" src="<?php echo $this->request->webroot.$singleMasterList->picture; ?>"/></td>
                         <td><?= $singleMasterList->drawingNo; ?></td>
+                        <td><?= $singleMasterList->section; ?></td>
                     </tr>
                     <?php
                     $i++;

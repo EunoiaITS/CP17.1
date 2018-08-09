@@ -16,10 +16,11 @@
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <div class="col-sm-6  col-md-4 col-xs-6">
-                                        <label for="ip-requestor" class="label-drawing">Requestor <span class="project-name-sem">:</span></label>
+                                        <label for="ip-requester" class="label-drawing">Requester <span class="project-name-sem">:</span></label>
+                                        <label for="ip-requester" class="label-drawing">Requester <span class="project-name-sem">:</span></label>
                                     </div>
                                     <div class="col-sm-6 col-md-8 col-xs-6">
-                                        <input name="requested_by" type="text" id="ip-requestor" class="form-control" value="<?php echo $pic; ?>" readonly/>
+                                        <input name="requested_by" type="text" id="ip-requester" class="form-control" value="<?php echo $pic; ?>" readonly/>
                                     </div>
                                 </div>
                             </div>
@@ -47,7 +48,7 @@
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <div class="col-sm-6  col-md-4 col-xs-6">
-                                        <label for="ip-date" class="label-drawing">Dute Date<span class="project-name-sem">:</span></label>
+                                        <label for="ip-date" class="label-drawing">Due Date<span class="project-name-sem">:</span></label>
                                     </div>
                                     <div class="col-sm-6 col-md-8 col-xs-6">
                                         <input name="due_date" type="text" id="ip-date" class="form-control"/>
@@ -138,7 +139,7 @@
                             <div class="col-sm-12 col-xs-12">
                                 <div class="form-group">
                                     <div class="col-sm-4 col-md-4  col-xs-6">
-                                        <label for="ip-remarks" class="label-drawing">Remarks/If necessarys <span class="project-name-sem">:</span></label>
+                                        <label for="ip-remarks" class="label-drawing">Remarks/If Necessary <span class="project-name-sem">:</span></label>
                                     </div>
                                     <div class="col-sm-12 col-xs-6">
                                         <textarea name="remarks" id="ip-remarks" cols="30" rows="5"></textarea>

@@ -17,7 +17,7 @@
                             <th>Drawing No</th>
                             <th>Issue Date</th>
                             <th>Supplier</th>
-                            <th>Requestor</th>
+                            <th>Requester</th>
                             <th>Remarks</th>
                             <th>Actions</th>
                         </tr>

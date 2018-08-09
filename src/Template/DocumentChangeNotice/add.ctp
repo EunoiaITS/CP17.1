@@ -26,11 +26,11 @@
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <div class="col-sm-6 col-xs-6">
-                                        <label for="dcn-requestor" class="label-drawing">Requestor <span
+                                        <label for="dcn-requester" class="label-drawing">Requester <span
                                                     class="project-name-sem">:</span></label>
                                     </div>
                                     <div class="col-sm-6 col-xs-6">
-                                        <input type="text" name="requester" id="dcn-requestor" class="form-control" value="<?php echo $pic; ?>" readonly
+                                        <input type="text" name="requester" id="dcn-requester" class="form-control" value="<?php echo $pic; ?>" readonly
                                                required/>
                                     </div>
                                 </div>

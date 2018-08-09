@@ -11,7 +11,7 @@
                         <tr>
                             <th>NO.</th>
                             <th>Drawing No</th>
-                            <th>Requestor</th>
+                            <th>Requester</th>
                             <th>Requested Date</th>
                             <th>P.I.C</th>
                             <th>Issue Date</th>

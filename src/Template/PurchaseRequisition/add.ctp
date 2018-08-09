@@ -93,7 +93,7 @@
                                 <tr>
                                     <th>Drawing Name</th>
                                     <th>Drawing No</th>
-                                    <th>Qty</th>
+                                    <th>Quantity</th>
                                     <th>UOM</th>
                                     <th>U/Price</th>
                                     <th>Amount</th>
